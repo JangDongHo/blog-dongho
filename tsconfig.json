@@ -1,8 +1,15 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"],
   "compilerOptions": {
-    "strictNullChecks": true
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@/components/*": ["src/components/*"],
+      "@/layouts/*": ["src/layouts/*"],
+      "@/utils/*": ["src/utils/*"],
+      "@/types": ["src/types.ts"],
+      "@/config": ["src/config.ts"]
+    },
+    "types": ["unified", "@types/unist", "@types/hast", "astro/client"]
   }
 }
