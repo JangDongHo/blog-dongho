@@ -42,6 +42,11 @@ test('extractDescription: 제목·코드·이미지를 건너뛰고 첫 문단�
   assert.equal(extractDescription(md), '첫 문단입니다 링크 굵게');
 });
 
+test('extractDescription: 구분선(---)은 건너뛴다', () => {
+  assert.equal(extractDescription('## 개요\n\n---\n\n- 항목 하나\n\n---\n\n본문'), '항목 하나');
+  assert.equal(extractDescription('---\n\n***\n\n___', '제목'), '제목');
+});
+
 test('extractDescription: 160자(코드포인트)로 자르고, 본문이 비면 fallback', () => {
   const long = '가'.repeat(200);
   assert.equal(Array.from(extractDescription(long)).length, 160);

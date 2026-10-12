@@ -30,6 +30,7 @@ export function extractDescription(markdown, fallback = '', max = 160) {
     .replace(/!\[[^\]]*\]\([^)]*\)/g, '')
     .split(/\n{2,}/)
     .filter((block) => !/^\s*#{1,6}\s/.test(block))
+    .filter((block) => !/^\s*([-*_])(\s*\1){2,}\s*$/.test(block)) // 구분선
     .map(toPlain)
     .find((p) => p.length > 0);
   if (!text) return fallback;
