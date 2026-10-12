@@ -61,6 +61,8 @@ const structuredData = {
 // Get all posts for wikilink resolution
 const allPosts = await getCollection('posts');
 const visiblePosts = allPosts.filter(p => shouldShowPost(p, isDev));
+// 위키링크 해석에는 id와 제목만 필요하다. 본문까지 직렬화하면 모든 글 페이지에 수 MB가 인라인된다.
+const linkablePosts = visiblePosts.map((p) => ({ id: p.id, data: { title: p.data.title } }));
 
 // Process the post content and get processed data including word count
 const { Content, headings, wordCount, remarkPluginFrontmatter } = await processPost(post);
@@ -338,7 +340,7 @@ if (siteConfig.postOptions.graphView.enabled && siteConfig.postOptions.graphView
   </div>
 
   <Fragment slot="scripts">
-    <script define:vars={{ posts: visiblePosts, commentsEnabled: siteConfig.postOptions.comments.enabled, postTitle: post.data.title, postSlug: post.id }}>
+    <script define:vars={{ posts: linkablePosts, commentsEnabled: siteConfig.postOptions.comments.enabled, postTitle: post.data.title, postSlug: post.id }}>
 
       // Process wikilinks - unified logic for all wikilink types
       function initializeWikilinks() {

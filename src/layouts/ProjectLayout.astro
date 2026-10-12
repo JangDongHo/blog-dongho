@@ -83,6 +83,8 @@ const structuredData = {
 // Get all posts for wikilink resolution
 const allPosts = await getCollection('posts');
 const visiblePosts = allPosts.filter(p => shouldShowPost(p as any, isDev));
+// 위키링크 해석에는 id와 제목만 필요하다. 본문까지 직렬화하면 모든 글 페이지에 수 MB가 인라인된다.
+const linkablePosts = visiblePosts.map((p) => ({ id: p.id, data: { title: p.data.title } }));
 
 // Get all projects to check if any have categories
 const allProjectsForCategories = await getCollection('projects');
@@ -355,7 +357,7 @@ const { prev: prevProject, next: nextProject } = getAdjacentPosts(visibleProject
   </div>
 
   <Fragment slot="scripts">
-    <script define:vars={{ posts: visiblePosts, commentsEnabled: siteConfig.postOptions.comments.enabled, postTitle: project.data.title, postSlug: project.id }}>
+    <script define:vars={{ posts: linkablePosts, commentsEnabled: siteConfig.postOptions.comments.enabled, postTitle: project.data.title, postSlug: project.id }}>
       // Remove duplicate H1 from project content (since we render it in header)
       document.addEventListener('DOMContentLoaded', function() {
         const projectContent = document.getElementById('project-content');
