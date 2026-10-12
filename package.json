@@ -17,6 +17,8 @@
     "check-images": "node scripts/check-missing-images.js",
     "update": "node scripts/update.mjs",
     "version": "node scripts/get-version.js",
+    "test:migrate": "node --test scripts/migrate/*.test.mjs",
+    "migrate:notion": "node scripts/migrate/migrate-notion.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
