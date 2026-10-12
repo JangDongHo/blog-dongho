@@ -1,6 +1,6 @@
 ---
 title: "SQL로 데이터베이스 정의하기 [개념]"
-description: "---"
+description: "줄여서 SQL 현업에서 쓰이는 relational DBMS의 표준 언어 종합적인 database 언어: DDL + DML + VDL"
 date: 2024-12-29
 ---
 

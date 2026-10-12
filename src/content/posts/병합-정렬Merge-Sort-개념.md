@@ -1,6 +1,6 @@
 ---
 title: "병합 정렬(Merge Sort) [개념]"
-description: "---"
+description: "‘존 폰 노이만(John von Neumann)’이라는 사람이 제안한 방법 병합 정렬은 분할 정복(Devide and Conquer) 기법과 재귀 알고리즘을 이용한 정렬 알고리즘"
 date: 2024-11-14
 ---
 

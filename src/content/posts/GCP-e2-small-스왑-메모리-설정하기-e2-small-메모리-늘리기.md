@@ -1,6 +1,6 @@
 ---
 title: "GCP e2-small 스왑 메모리 설정하기 (e2-small 메모리 늘리기)"
-description: "---"
+description: "GCP의 e2-micro 인스턴스를 사용하고 있는데, 램 메모리가 1GB밖에 되지 않아 서버를 빌드하고 배포하는 도중 메모리 부족 현상으로 서버가 다운되는 문제 발생"
 date: 2024-12-31
 ---
 
