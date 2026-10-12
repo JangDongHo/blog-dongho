@@ -17,6 +17,7 @@ import {
   fileExtensionFor,
   stripSiteConfigBlock,
   fixDetailsSpacing,
+  removeExcludedFileLinks,
 } from './content.mjs';
 
 test('toDateOnly: 시간·타임존을 제거', () => {
@@ -167,4 +168,26 @@ test('fixDetailsSpacing: </summary> 뒤에 빈 줄이 없으면 추가하고, �
 test('extractDescription: 첫 문단이 콜아웃이면 [!note] 태그를 제외한 본문을 쓴다', () => {
   const md = '> [!note]\n> 💡 본 포스팅은 안내입니다\n\n다음 문단';
   assert.equal(extractDescription(md), '💡 본 포스팅은 안내입니다');
+});
+
+test('calloutToMarkdown: 자식 블록 내용을 제목 아래에 같은 콜아웃으로 포함 (구분선이 제목을 제목행으로 만들지 않도록 빈 줄)', () => {
+  const callout = { icon: null, rich_text: [{ plain_text: 'HTML vs XML', annotations: { bold: true } }] };
+  assert.equal(
+    calloutToMarkdown(callout, '---\n\n1. HTML\n2. XML'),
+    '> [!note]\n> **HTML vs XML**\n>\n> ---\n>\n> 1. HTML\n> 2. XML',
+  );
+});
+
+test('calloutToMarkdown: 제목 없이 자식만 있어도 콜아웃으로 출력', () => {
+  const callout = { icon: null, rich_text: [] };
+  assert.equal(calloutToMarkdown(callout, '본문 내용'), '> [!note]\n> 본문 내용');
+});
+
+test('removeExcludedFileLinks: 제외 확장자의 Notion 첨부 링크만 단독 줄에서 제거', () => {
+  const S3 = 'https://prod-files-secure.s3.us-west-2.amazonaws.com';
+  const md = `앞\n\n[녹화.mov](${S3}/a/rec.MOV?x=1)\n\n[문서.pdf](${S3}/a/doc.pdf?x=1)\n\n본문 중 [인라인.mov](${S3}/a/i.mov?x=1) 링크\n\n뒤`;
+  assert.equal(
+    removeExcludedFileLinks(md, ['mov']),
+    `앞\n\n\n\n[문서.pdf](${S3}/a/doc.pdf?x=1)\n\n본문 중 [인라인.mov](${S3}/a/i.mov?x=1) 링크\n\n뒤`,
+  );
 });

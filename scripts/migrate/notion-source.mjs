@@ -15,7 +15,27 @@ export function createNotionSource({ apiKey, databaseId }) {
     notionClient: client,
     config: { parseChildPages: false },
   });
-  n2m.setCustomTransformer('callout', async (block) => calloutToMarkdown(block.callout));
+  // 콜아웃은 자식 블록까지 직접 변환한다. notion-to-md는 콜아웃 자식을 콜아웃 변환 안에서만
+  // 처리하고 이후 단계에서 건너뛰므로, 커스텀 변환기가 자식을 가져오지 않으면 내용이 사라진다.
+  n2m.setCustomTransformer('callout', async (block) => {
+    let childMarkdown = '';
+    if (block.has_children) {
+      const children = [];
+      let cursor;
+      do {
+        const res = await client.blocks.children.list({
+          block_id: block.id,
+          start_cursor: cursor,
+          page_size: 100,
+        });
+        children.push(...res.results);
+        cursor = res.has_more ? res.next_cursor : undefined;
+      } while (cursor);
+      const childBlocks = await n2m.blocksToMarkdown(children);
+      childMarkdown = n2m.toMarkdownString(childBlocks).parent ?? '';
+    }
+    return calloutToMarkdown(block.callout, childMarkdown);
+  });
 
   let dataSourceId;
   async function getDataSourceId() {

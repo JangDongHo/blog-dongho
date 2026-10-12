@@ -86,12 +86,22 @@ export function richTextToMarkdown(richText) {
     .join('');
 }
 
-export function calloutToMarkdown(callout) {
+// childMarkdown: 콜아웃의 자식 블록을 변환한 마크다운. Notion 콜아웃은 제목 한 줄만 rich_text에 두고
+// 본문을 자식 블록으로 갖는 경우가 많다. 제목과 자식 사이에 빈 줄을 둬서, 자식이 `---`(구분선)로
+// 시작해도 제목이 setext 제목행으로 해석되지 않게 한다.
+export function calloutToMarkdown(callout, childMarkdown = '') {
   const icon = callout.icon?.type === 'emoji' ? `${callout.icon.emoji} ` : '';
-  const body = icon + richTextToMarkdown(callout.rich_text);
-  // 본문도 이모지도 없는 콜아웃(자식 블록만 담은 경우)은 빈 박스가 되므로 출력하지 않는다.
-  if (!body.trim()) return '';
-  return ['> [!note]', ...body.split('\n').map((l) => `> ${l}`)].join('\n');
+  const title = icon + richTextToMarkdown(callout.rich_text);
+  const children = childMarkdown.trim();
+  // 제목도 이모지도 자식도 없으면 빈 박스가 되므로 출력하지 않는다.
+  if (!title.trim() && !children) return '';
+  const lines = [];
+  if (title.trim()) lines.push(...title.split('\n'));
+  if (children) {
+    if (lines.length) lines.push('');
+    lines.push(...children.split('\n'));
+  }
+  return ['> [!note]', ...lines.map((l) => (l.trim() ? `> ${l}` : '>'))].join('\n');
 }
 
 // 출력이 비어 있어도 정상인 블록 타입
@@ -165,4 +175,18 @@ export function stripSiteConfigBlock(markdown) {
 // HTML 블록(<details>)은 빈 줄 전까지 마크다운으로 해석되지 않으므로 </summary> 뒤에 빈 줄을 넣는다.
 export function fixDetailsSpacing(markdown) {
   return markdown.replace(/<\/summary>\n(?!\n)/g, '</summary>\n\n');
+}
+
+// 용량이 큰 첨부(화면 녹화 등)는 이전에서 제외한다. 단독 줄의 Notion 첨부 링크만 지운다.
+export function removeExcludedFileLinks(markdown, extensions) {
+  const excluded = new Set(extensions.map((e) => e.toLowerCase()));
+  return markdown
+    .split('\n')
+    .filter((line) => {
+      const urls = findNotionFileUrls(line);
+      if (urls.length !== 1) return true;
+      const onlyLink = line.trim().startsWith('[') && line.trim().endsWith(`](${urls[0]})`);
+      return !(onlyLink && excluded.has(fileExtensionFor(null, urls[0]) ?? ''));
+    })
+    .join('\n');
 }

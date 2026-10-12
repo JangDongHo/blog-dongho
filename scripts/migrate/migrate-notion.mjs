@@ -16,7 +16,11 @@ import {
   fileExtensionFor,
   stripSiteConfigBlock,
   fixDetailsSpacing,
+  removeExcludedFileLinks,
 } from './content.mjs';
+
+// 이전에서 제외할 첨부 확장자 (19주차 회고의 80MB 화면 녹화)
+const EXCLUDED_FILE_EXTENSIONS = ['mov'];
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 
@@ -102,7 +106,7 @@ export async function migrate({
   for (const [i, entry] of entries.entries()) {
     log(`[${i + 1}/${entries.length}] ${entry.title}`);
     const { markdown: fetched, unsupported } = await source.getMarkdown(entry.notionId);
-    const raw = stripSiteConfigBlock(fetched);
+    const raw = removeExcludedFileLinks(stripSiteConfigBlock(fetched), EXCLUDED_FILE_EXTENSIONS);
     const date = toDateOnly(entry.date);
 
     for (const u of unsupported) report.unsupported.push({ title: entry.title, ...u });
