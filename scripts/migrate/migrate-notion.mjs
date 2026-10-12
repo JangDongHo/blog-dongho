@@ -14,6 +14,7 @@ import {
   findNotionFileUrls,
   replaceFileUrls,
   fileExtensionFor,
+  stripSiteConfigBlock,
 } from './content.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -99,7 +100,8 @@ export async function migrate({
 
   for (const [i, entry] of entries.entries()) {
     log(`[${i + 1}/${entries.length}] ${entry.title}`);
-    const { markdown: raw, unsupported } = await source.getMarkdown(entry.notionId);
+    const { markdown: fetched, unsupported } = await source.getMarkdown(entry.notionId);
+    const raw = stripSiteConfigBlock(fetched);
     const date = toDateOnly(entry.date);
 
     for (const u of unsupported) report.unsupported.push({ title: entry.title, ...u });

@@ -15,6 +15,7 @@ import {
   findNotionFileUrls,
   replaceFileUrls,
   fileExtensionFor,
+  stripSiteConfigBlock,
 } from './content.mjs';
 
 test('toDateOnly: 시간·타임존을 제거', () => {
@@ -137,4 +138,14 @@ test('fileExtensionFor: URL 경로 확장자 우선, 없으면 이미지 content
   assert.equal(fileExtensionFor(null, `${S3}/a/%EB%85%B9.MOV?x=1`), 'mov');
   assert.equal(fileExtensionFor('image/png', `${S3}/a/noext`), 'png');
   assert.equal(fileExtensionFor(null, `${S3}/a/noext`), null);
+});
+
+test('stripSiteConfigBlock: 본문 맨 앞의 cleanUrl yaml 블록만 제거', () => {
+  const md = '```yaml\ncleanUrl: /x\nfloatFirstTOC: right\n```\n\n본문\n\n```yaml\ncleanUrl: /y\n```\n';
+  assert.equal(stripSiteConfigBlock(md), '본문\n\n```yaml\ncleanUrl: /y\n```\n');
+});
+
+test('stripSiteConfigBlock: cleanUrl이 없는 일반 yaml 코드 블록은 유지', () => {
+  const md = '```yaml\nname: app\nimage: node\n```\n\n본문';
+  assert.equal(stripSiteConfigBlock(md), md);
 });

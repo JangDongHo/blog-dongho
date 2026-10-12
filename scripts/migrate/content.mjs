@@ -146,3 +146,15 @@ export function fileExtensionFor(contentType, url) {
   if (m) return m[1].toLowerCase();
   return extensionFor(contentType, url);
 }
+
+// 이전 호스팅 도구용 설정(`cleanUrl: …` 등)이 본문 맨 앞 yaml 코드 블록으로 남은 글이 있다.
+// 콘텐츠가 아니므로 맨 앞의 해당 블록만 제거한다.
+export function stripSiteConfigBlock(markdown) {
+  const m = markdown.match(/^\s*```ya?ml\n([\s\S]*?)\n```[ \t]*\n*/);
+  if (!m) return markdown;
+  const lines = m[1].split('\n');
+  const isConfig =
+    lines.every((l) => /^[A-Za-z][\w-]*:\s*\S.*$/.test(l)) &&
+    lines.some((l) => l.startsWith('cleanUrl:'));
+  return isConfig ? markdown.slice(m[0].length) : markdown;
+}
