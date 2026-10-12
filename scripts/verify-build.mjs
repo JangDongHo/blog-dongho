@@ -8,7 +8,23 @@ const DIST = path.join(ROOT, 'dist');
 const POSTS = path.join(ROOT, 'src/content/posts');
 const failures = [];
 
-const exists = (p) => fs.access(p).then(() => true, () => false);
+// macOS 파일시스템은 대소문자를 구분하지 않아 fs.access만으로는 Linux(Netlify)와 결과가 다르다.
+// 경로의 각 구간을 디렉터리 목록과 정확히 비교해 대소문자까지 일치하는지 확인한다.
+async function exists(p) {
+  const rel = path.relative(ROOT, p).split(path.sep);
+  let dir = ROOT;
+  for (const seg of rel) {
+    let names;
+    try {
+      names = await fs.readdir(dir);
+    } catch {
+      return false;
+    }
+    if (!names.includes(seg)) return false;
+    dir = path.join(dir, seg);
+  }
+  return true;
+}
 
 const map = JSON.parse(await fs.readFile(path.join(ROOT, 'scripts/migration-map.json'), 'utf8'));
 
@@ -18,8 +34,8 @@ if (mdFiles.length !== map.length) {
   failures.push(`글 수 불일치: .md ${mdFiles.length} / 매핑 ${map.length}`);
 }
 for (const e of map) {
-  const page = path.join(DIST, 'posts', e.slug, 'index.html');
-  if (!(await exists(page))) failures.push(`페이지 없음: /posts/${e.slug}`);
+  const page = path.join(DIST, 'posts', decodeURIComponent(e.encodedSlug), 'index.html');
+  if (!(await exists(page))) failures.push(`페이지 없음: /posts/${decodeURIComponent(e.encodedSlug)}`);
 }
 
 // 2) 본문에 Notion 만료형 파일 URL이 남아 있지 않음
@@ -31,7 +47,7 @@ for (const f of mdFiles) {
 
 // 3) 빌드된 글의 로컬 <img src>가 모두 dist에 존재
 for (const e of map) {
-  const page = path.join(DIST, 'posts', e.slug, 'index.html');
+  const page = path.join(DIST, 'posts', decodeURIComponent(e.encodedSlug), 'index.html');
   if (!(await exists(page))) continue;
   const html = await fs.readFile(page, 'utf8');
   for (const m of html.matchAll(/<img[^>]+src="(\/[^"]+)"/g)) {

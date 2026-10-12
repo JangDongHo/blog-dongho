@@ -3,14 +3,14 @@
     "notionId": "1595ca9b-265e-807a-8b38-df67233fe05d",
     "title": "Express가 좋을까, NestJS가 좋을까",
     "slug": "Express가-좋을까-NestJS가-좋을까",
-    "encodedSlug": "Express%EA%B0%80-%EC%A2%8B%EC%9D%84%EA%B9%8C-NestJS%EA%B0%80-%EC%A2%8B%EC%9D%84%EA%B9%8C",
+    "encodedSlug": "express%EA%B0%80-%EC%A2%8B%EC%9D%84%EA%B9%8C-nestjs%EA%B0%80-%EC%A2%8B%EC%9D%84%EA%B9%8C",
     "date": "2023-01-07"
   },
   {
     "notionId": "1595ca9b-265e-809d-b515-cb82b263bae0",
     "title": "NestJS 설치하기",
     "slug": "NestJS-설치하기",
-    "encodedSlug": "NestJS-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0",
+    "encodedSlug": "nestjs-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0",
     "date": "2023-01-07"
   },
   {
@@ -38,21 +38,21 @@
     "notionId": "1595ca9b-265e-80b6-a05e-cdb05f431860",
     "title": "NestJS 컨트롤러 알아보기 - 1",
     "slug": "NestJS-컨트롤러-알아보기-1",
-    "encodedSlug": "NestJS-%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0-1",
+    "encodedSlug": "nestjs-%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0-1",
     "date": "2023-03-05"
   },
   {
     "notionId": "1595ca9b-265e-806d-91b0-fcebb440b50e",
     "title": "NestJS 컨트롤러 알아보기 - 2",
     "slug": "NestJS-컨트롤러-알아보기-2",
-    "encodedSlug": "NestJS-%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0-2",
+    "encodedSlug": "nestjs-%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0-2",
     "date": "2023-03-06"
   },
   {
     "notionId": "1b85ca9b-265e-80b4-9a7e-eab0b1b7c79f",
     "title": "시각장애인을 위한 읽어주는 쇼핑 대화형 AI '소담'",
     "slug": "시각장애인을-위한-읽어주는-쇼핑-대화형-AI-소담",
-    "encodedSlug": "%EC%8B%9C%EA%B0%81%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%9D%BD%EC%96%B4%EC%A3%BC%EB%8A%94-%EC%87%BC%ED%95%91-%EB%8C%80%ED%99%94%ED%98%95-AI-%EC%86%8C%EB%8B%B4",
+    "encodedSlug": "%EC%8B%9C%EA%B0%81%EC%9E%A5%EC%95%A0%EC%9D%B8%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%9D%BD%EC%96%B4%EC%A3%BC%EB%8A%94-%EC%87%BC%ED%95%91-%EB%8C%80%ED%99%94%ED%98%95-ai-%EC%86%8C%EB%8B%B4",
     "date": "2024-05-16"
   },
   {
@@ -66,7 +66,7 @@
     "notionId": "1595ca9b-265e-8022-86ec-f13dd55bcdad",
     "title": "Supabase Max client connections reached 오류 해결",
     "slug": "Supabase-Max-client-connections-reached-오류-해결",
-    "encodedSlug": "Supabase-Max-client-connections-reached-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0",
+    "encodedSlug": "supabase-max-client-connections-reached-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0",
     "date": "2024-05-24"
   },
   {
@@ -136,21 +136,21 @@
     "notionId": "1595ca9b-265e-80e3-8c4b-c7e3a8faacf1",
     "title": "다이나믹 프로그래밍(DP) 알고리즘 [개념]",
     "slug": "다이나믹-프로그래밍DP-알고리즘-개념",
-    "encodedSlug": "%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8DDP-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90",
+    "encodedSlug": "%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8Ddp-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90",
     "date": "2024-07-31"
   },
   {
     "notionId": "1595ca9b-265e-8088-a556-f7b12aa2607e",
     "title": "다이나믹 프로그래밍(DP) 알고리즘 [심화]",
     "slug": "다이나믹-프로그래밍DP-알고리즘-심화",
-    "encodedSlug": "%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8DDP-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%8B%AC%ED%99%94",
+    "encodedSlug": "%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8Ddp-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%8B%AC%ED%99%94",
     "date": "2024-08-05"
   },
   {
     "notionId": "1595ca9b-265e-8057-abad-e2a22e6786b6",
     "title": "다이나믹 프로그래밍(DP) 알고리즘 : 누적합 알고리즘",
     "slug": "다이나믹-프로그래밍DP-알고리즘-누적합-알고리즘",
-    "encodedSlug": "%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8DDP-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%88%84%EC%A0%81%ED%95%A9-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98",
+    "encodedSlug": "%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8Ddp-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%88%84%EC%A0%81%ED%95%A9-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98",
     "date": "2024-08-11"
   },
   {
@@ -192,7 +192,7 @@
     "notionId": "1595ca9b-265e-80fc-84c8-e50154f31b0d",
     "title": "그래프 순회 (DFS & BFS)",
     "slug": "그래프-순회-DFS-BFS",
-    "encodedSlug": "%EA%B7%B8%EB%9E%98%ED%94%84-%EC%88%9C%ED%9A%8C-DFS-BFS",
+    "encodedSlug": "%EA%B7%B8%EB%9E%98%ED%94%84-%EC%88%9C%ED%9A%8C-dfs-bfs",
     "date": "2024-09-23"
   },
   {
@@ -220,21 +220,21 @@
     "notionId": "1595ca9b-265e-8015-87c1-cdab7a0ad12f",
     "title": "ES6 문법 정리",
     "slug": "ES6-문법-정리",
-    "encodedSlug": "ES6-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC",
+    "encodedSlug": "es6-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC",
     "date": "2024-10-14"
   },
   {
     "notionId": "1595ca9b-265e-80d2-9dae-ee1f70ef4823",
     "title": "병합 정렬(Merge Sort) [개념]",
     "slug": "병합-정렬Merge-Sort-개념",
-    "encodedSlug": "%EB%B3%91%ED%95%A9-%EC%A0%95%EB%A0%ACMerge-Sort-%EA%B0%9C%EB%85%90",
+    "encodedSlug": "%EB%B3%91%ED%95%A9-%EC%A0%95%EB%A0%ACmerge-sort-%EA%B0%9C%EB%85%90",
     "date": "2024-11-14"
   },
   {
     "notionId": "1595ca9b-265e-80bb-9bf5-d0789519c755",
     "title": "헷갈리는 Function, Class, Instance, Object Literal 정의 톺아보기",
     "slug": "헷갈리는-Function-Class-Instance-Object-Literal-정의-톺아보기",
-    "encodedSlug": "%ED%97%B7%EA%B0%88%EB%A6%AC%EB%8A%94-Function-Class-Instance-Object-Literal-%EC%A0%95%EC%9D%98-%ED%86%BA%EC%95%84%EB%B3%B4%EA%B8%B0",
+    "encodedSlug": "%ED%97%B7%EA%B0%88%EB%A6%AC%EB%8A%94-function-class-instance-object-literal-%EC%A0%95%EC%9D%98-%ED%86%BA%EC%95%84%EB%B3%B4%EA%B8%B0",
     "date": "2024-11-22"
   },
   {
@@ -262,28 +262,28 @@
     "notionId": "16b5ca9b-265e-80fa-ae70-f3fc89b2b93a",
     "title": "SQL로 데이터베이스 정의하기 [개념]",
     "slug": "SQL로-데이터베이스-정의하기-개념",
-    "encodedSlug": "SQL%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%A0%95%EC%9D%98%ED%95%98%EA%B8%B0-%EA%B0%9C%EB%85%90",
+    "encodedSlug": "sql%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%A0%95%EC%9D%98%ED%95%98%EA%B8%B0-%EA%B0%9C%EB%85%90",
     "date": "2024-12-29"
   },
   {
     "notionId": "16d5ca9b-265e-8075-bfb1-c88aa4296e82",
     "title": "GCP e2-small 스왑 메모리 설정하기 (e2-small 메모리 늘리기)",
     "slug": "GCP-e2-small-스왑-메모리-설정하기-e2-small-메모리-늘리기",
-    "encodedSlug": "GCP-e2-small-%EC%8A%A4%EC%99%91-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-e2-small-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EB%8A%98%EB%A6%AC%EA%B8%B0",
+    "encodedSlug": "gcp-e2-small-%EC%8A%A4%EC%99%91-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-e2-small-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EB%8A%98%EB%A6%AC%EA%B8%B0",
     "date": "2024-12-31"
   },
   {
     "notionId": "1705ca9b-265e-806a-808a-cb78d6263839",
     "title": "SQL로 데이터베이스에 데이터 추가, 수정, 삭제하기",
     "slug": "SQL로-데이터베이스에-데이터-추가-수정-삭제하기",
-    "encodedSlug": "SQL%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%97%90-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B6%94%EA%B0%80-%EC%88%98%EC%A0%95-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0",
+    "encodedSlug": "sql%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%97%90-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B6%94%EA%B0%80-%EC%88%98%EC%A0%95-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0",
     "date": "2025-01-03"
   },
   {
     "notionId": "1765ca9b-265e-8062-8c6d-c3e3a5312c5a",
     "title": "SQL로 데이터 조회하기",
     "slug": "SQL로-데이터-조회하기",
-    "encodedSlug": "SQL%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0",
+    "encodedSlug": "sql%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0",
     "date": "2025-01-09"
   },
   {
@@ -311,49 +311,49 @@
     "notionId": "1af5ca9b-265e-80cf-9bc1-dd04ed414812",
     "title": "[WITH RECURSIVE] 프로그래머스 - 입양 시각 구하기(2)",
     "slug": "WITH-RECURSIVE-프로그래머스-입양-시각-구하기2",
-    "encodedSlug": "WITH-RECURSIVE-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%9E%85%EC%96%91-%EC%8B%9C%EA%B0%81-%EA%B5%AC%ED%95%98%EA%B8%B02",
+    "encodedSlug": "with-recursive-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%9E%85%EC%96%91-%EC%8B%9C%EA%B0%81-%EA%B5%AC%ED%95%98%EA%B8%B02",
     "date": "2025-03-01"
   },
   {
     "notionId": "1aa5ca9b-265e-80c5-a230-f0d07694a937",
     "title": "[CASE WHEN THEN END] 프로그래머스 - 언어별 개발자 분류하기",
     "slug": "CASE-WHEN-THEN-END-프로그래머스-언어별-개발자-분류하기",
-    "encodedSlug": "CASE-WHEN-THEN-END-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%96%B8%EC%96%B4%EB%B3%84-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%B6%84%EB%A5%98%ED%95%98%EA%B8%B0",
+    "encodedSlug": "case-when-then-end-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%96%B8%EC%96%B4%EB%B3%84-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%B6%84%EB%A5%98%ED%95%98%EA%B8%B0",
     "date": "2025-03-02"
   },
   {
     "notionId": "1ae5ca9b-265e-8035-97c3-fd13fcb0a8b1",
     "title": "[WINDOW FUNCTION] 프로그래머스 - 대장균의 크기에 따라 분류하기 2",
     "slug": "WINDOW-FUNCTION-프로그래머스-대장균의-크기에-따라-분류하기-2",
-    "encodedSlug": "WINDOW-FUNCTION-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%8C%80%EC%9E%A5%EA%B7%A0%EC%9D%98-%ED%81%AC%EA%B8%B0%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%B6%84%EB%A5%98%ED%95%98%EA%B8%B0-2",
+    "encodedSlug": "window-function-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%8C%80%EC%9E%A5%EA%B7%A0%EC%9D%98-%ED%81%AC%EA%B8%B0%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%B6%84%EB%A5%98%ED%95%98%EA%B8%B0-2",
     "date": "2025-03-06"
   },
   {
     "notionId": "1a95ca9b-265e-809a-b132-fba58116ffd1",
     "title": "[WITH RECURSIVE] 멸종위기의 대장균 찾기",
     "slug": "WITH-RECURSIVE-멸종위기의-대장균-찾기",
-    "encodedSlug": "WITH-RECURSIVE-%EB%A9%B8%EC%A2%85%EC%9C%84%EA%B8%B0%EC%9D%98-%EB%8C%80%EC%9E%A5%EA%B7%A0-%EC%B0%BE%EA%B8%B0",
+    "encodedSlug": "with-recursive-%EB%A9%B8%EC%A2%85%EC%9C%84%EA%B8%B0%EC%9D%98-%EB%8C%80%EC%9E%A5%EA%B7%A0-%EC%B0%BE%EA%B8%B0",
     "date": "2025-03-07"
   },
   {
     "notionId": "1b35ca9b-265e-80fb-8e05-f357d81c34f3",
     "title": "최소 신장 트리(MST, Minimum Spanning Tree) [개념]",
     "slug": "최소-신장-트리MST-Minimum-Spanning-Tree-개념",
-    "encodedSlug": "%EC%B5%9C%EC%86%8C-%EC%8B%A0%EC%9E%A5-%ED%8A%B8%EB%A6%ACMST-Minimum-Spanning-Tree-%EA%B0%9C%EB%85%90",
+    "encodedSlug": "%EC%B5%9C%EC%86%8C-%EC%8B%A0%EC%9E%A5-%ED%8A%B8%EB%A6%ACmst-minimum-spanning-tree-%EA%B0%9C%EB%85%90",
     "date": "2025-03-11"
   },
   {
     "notionId": "1705ca9b-265e-807f-96e4-f19e4193f8da",
     "title": "NGINX에서 499 Client Closed Request 오류 해결하기",
     "slug": "NGINX에서-499-Client-Closed-Request-오류-해결하기",
-    "encodedSlug": "NGINX%EC%97%90%EC%84%9C-499-Client-Closed-Request-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0",
+    "encodedSlug": "nginx%EC%97%90%EC%84%9C-499-client-closed-request-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0",
     "date": "2025-03-13"
   },
   {
     "notionId": "1b55ca9b-265e-804a-a62c-d15873c01bed",
     "title": "레이스 컨디션(Race Condition)이란?",
     "slug": "레이스-컨디션Race-Condition이란",
-    "encodedSlug": "%EB%A0%88%EC%9D%B4%EC%8A%A4-%EC%BB%A8%EB%94%94%EC%85%98Race-Condition%EC%9D%B4%EB%9E%80",
+    "encodedSlug": "%EB%A0%88%EC%9D%B4%EC%8A%A4-%EC%BB%A8%EB%94%94%EC%85%98race-condition%EC%9D%B4%EB%9E%80",
     "date": "2025-03-13"
   },
   {
@@ -367,7 +367,7 @@
     "notionId": "1c95ca9b-265e-80aa-b6ac-d75a05ec6c59",
     "title": "Jest Cannot find module 해결방법",
     "slug": "Jest-Cannot-find-module-해결방법",
-    "encodedSlug": "Jest-Cannot-find-module-%ED%95%B4%EA%B2%B0%EB%B0%A9%EB%B2%95",
+    "encodedSlug": "jest-cannot-find-module-%ED%95%B4%EA%B2%B0%EB%B0%A9%EB%B2%95",
     "date": "2025-04-02"
   },
   {
@@ -395,70 +395,70 @@
     "notionId": "1d15ca9b-265e-80db-80d6-e22c5cf5f6e7",
     "title": "[NestJS] class-validator의 isPhoneNumber는 믿을 수 있을까?",
     "slug": "NestJS-class-validator의-isPhoneNumber는-믿을-수-있을까",
-    "encodedSlug": "NestJS-class-validator%EC%9D%98-isPhoneNumber%EB%8A%94-%EB%AF%BF%EC%9D%84-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C",
+    "encodedSlug": "nestjs-class-validator%EC%9D%98-isphonenumber%EB%8A%94-%EB%AF%BF%EC%9D%84-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C",
     "date": "2025-04-10"
   },
   {
     "notionId": "1d25ca9b-265e-80fd-bec9-ee5a244460dc",
     "title": "타임존 문제 해결기: KST vs UTC",
     "slug": "타임존-문제-해결기-KST-vs-UTC",
-    "encodedSlug": "%ED%83%80%EC%9E%84%EC%A1%B4-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%EA%B8%B0-KST-vs-UTC",
+    "encodedSlug": "%ED%83%80%EC%9E%84%EC%A1%B4-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%EA%B8%B0-kst-vs-utc",
     "date": "2025-04-12"
   },
   {
     "notionId": "1d45ca9b-265e-8066-b42f-fc838efa5929",
     "title": "[자료구조] B트리(B-Tree)의 개념, 특징",
     "slug": "자료구조-B트리B-Tree의-개념-특징",
-    "encodedSlug": "%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-B%ED%8A%B8%EB%A6%ACB-Tree%EC%9D%98-%EA%B0%9C%EB%85%90-%ED%8A%B9%EC%A7%95",
+    "encodedSlug": "%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-b%ED%8A%B8%EB%A6%ACb-tree%EC%9D%98-%EA%B0%9C%EB%85%90-%ED%8A%B9%EC%A7%95",
     "date": "2025-04-13"
   },
   {
     "notionId": "1d65ca9b-265e-8054-8f7d-d9e402c2e2b9",
     "title": "[네트워크] 응용 계층 기초 (HTTP)",
     "slug": "네트워크-응용-계층-기초-HTTP",
-    "encodedSlug": "%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%9D%91%EC%9A%A9-%EA%B3%84%EC%B8%B5-%EA%B8%B0%EC%B4%88-HTTP",
+    "encodedSlug": "%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%9D%91%EC%9A%A9-%EA%B3%84%EC%B8%B5-%EA%B8%B0%EC%B4%88-http",
     "date": "2025-04-14"
   },
   {
     "notionId": "1d55ca9b-265e-8061-b9c3-e55d08930a0f",
     "title": "[모던 자바스크립트 Deep Dive] - 4 변수",
     "slug": "모던-자바스크립트-Deep-Dive-4-변수",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-4-%EB%B3%80%EC%88%98",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-4-%EB%B3%80%EC%88%98",
     "date": "2025-04-15"
   },
   {
     "notionId": "1d75ca9b-265e-80e6-9832-d32ea3fd0938",
     "title": "[모던 자바스크립트 Deep Dive] - 5 표현식과 문",
     "slug": "모던-자바스크립트-Deep-Dive-5-표현식과-문",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-5-%ED%91%9C%ED%98%84%EC%8B%9D%EA%B3%BC-%EB%AC%B8",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-5-%ED%91%9C%ED%98%84%EC%8B%9D%EA%B3%BC-%EB%AC%B8",
     "date": "2025-04-16"
   },
   {
     "notionId": "1d75ca9b-265e-80eb-bda4-fdfaada9aa8b",
     "title": "[모던 자바스크립트 Deep Dive] - 6 데이터 타입",
     "slug": "모던-자바스크립트-Deep-Dive-6-데이터-타입",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-6-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-6-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85",
     "date": "2025-04-16"
   },
   {
     "notionId": "1d85ca9b-265e-802c-a18d-d187ecd807d8",
     "title": "[모던 자바스크립트 Deep Dive] - 7 연산자",
     "slug": "모던-자바스크립트-Deep-Dive-7-연산자",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-7-%EC%97%B0%EC%82%B0%EC%9E%90",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-7-%EC%97%B0%EC%82%B0%EC%9E%90",
     "date": "2025-04-17"
   },
   {
     "notionId": "1d85ca9b-265e-80c2-b096-cf8f4b36722b",
     "title": "[모던 자바스크립트 Deep Dive] - 9 타입 변환과 단축 평가",
     "slug": "모던-자바스크립트-Deep-Dive-9-타입-변환과-단축-평가",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-9-%ED%83%80%EC%9E%85-%EB%B3%80%ED%99%98%EA%B3%BC-%EB%8B%A8%EC%B6%95-%ED%8F%89%EA%B0%80",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-9-%ED%83%80%EC%9E%85-%EB%B3%80%ED%99%98%EA%B3%BC-%EB%8B%A8%EC%B6%95-%ED%8F%89%EA%B0%80",
     "date": "2025-04-17"
   },
   {
     "notionId": "1d95ca9b-265e-8096-8fbd-f351e9558b28",
     "title": "[모던 자바스크립트 Deep Dive] - 10 객체 리터럴",
     "slug": "모던-자바스크립트-Deep-Dive-10-객체-리터럴",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-10-%EA%B0%9D%EC%B2%B4-%EB%A6%AC%ED%84%B0%EB%9F%B4",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-10-%EA%B0%9D%EC%B2%B4-%EB%A6%AC%ED%84%B0%EB%9F%B4",
     "date": "2025-04-18"
   },
   {
@@ -472,105 +472,105 @@
     "notionId": "1db5ca9b-265e-80af-ba58-c8c839361794",
     "title": "[데이터베이스] RDBMS의 기본",
     "slug": "데이터베이스-RDBMS의-기본",
-    "encodedSlug": "%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-RDBMS%EC%9D%98-%EA%B8%B0%EB%B3%B8",
+    "encodedSlug": "%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-rdbms%EC%9D%98-%EA%B8%B0%EB%B3%B8",
     "date": "2025-04-21"
   },
   {
     "notionId": "1dd5ca9b-265e-80ba-8c15-defe13758785",
     "title": "[모던 자바스크립트 Deep Dive] - 11 원시 값과 객체의 비교",
     "slug": "모던-자바스크립트-Deep-Dive-11-원시-값과-객체의-비교",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-11-%EC%9B%90%EC%8B%9C-%EA%B0%92%EA%B3%BC-%EA%B0%9D%EC%B2%B4%EC%9D%98-%EB%B9%84%EA%B5%90",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-11-%EC%9B%90%EC%8B%9C-%EA%B0%92%EA%B3%BC-%EA%B0%9D%EC%B2%B4%EC%9D%98-%EB%B9%84%EA%B5%90",
     "date": "2025-04-22"
   },
   {
     "notionId": "1df5ca9b-265e-800f-9e62-eba1d0d09ff1",
     "title": "[모던 자바스크립트 Deep Dive] - 13 스코프",
     "slug": "모던-자바스크립트-Deep-Dive-13-스코프",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-13-%EC%8A%A4%EC%BD%94%ED%94%84",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-13-%EC%8A%A4%EC%BD%94%ED%94%84",
     "date": "2025-04-24"
   },
   {
     "notionId": "1df5ca9b-265e-80a1-8056-da38a6ab7ed2",
     "title": "[모던 자바스크립트 Deep Dive] - 12 함수",
     "slug": "모던-자바스크립트-Deep-Dive-12-함수",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-12-%ED%95%A8%EC%88%98",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-12-%ED%95%A8%EC%88%98",
     "date": "2025-04-24"
   },
   {
     "notionId": "1df5ca9b-265e-806d-92d7-c6e61362e683",
     "title": "[모던 자바스크립트 Deep Dive] - 14 전역 변수의 문제점",
     "slug": "모던-자바스크립트-Deep-Dive-14-전역-변수의-문제점",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-14-%EC%A0%84%EC%97%AD-%EB%B3%80%EC%88%98%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-14-%EC%A0%84%EC%97%AD-%EB%B3%80%EC%88%98%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90",
     "date": "2025-04-25"
   },
   {
     "notionId": "1e25ca9b-265e-8094-9f41-fca4c550db4b",
     "title": "[모던 자바스크립트 Deep Dive] - 15 let, const 키워드와 블록 레벨 스코프",
     "slug": "모던-자바스크립트-Deep-Dive-15-let-const-키워드와-블록-레벨-스코프",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-15-let-const-%ED%82%A4%EC%9B%8C%EB%93%9C%EC%99%80-%EB%B8%94%EB%A1%9D-%EB%A0%88%EB%B2%A8-%EC%8A%A4%EC%BD%94%ED%94%84",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-15-let-const-%ED%82%A4%EC%9B%8C%EB%93%9C%EC%99%80-%EB%B8%94%EB%A1%9D-%EB%A0%88%EB%B2%A8-%EC%8A%A4%EC%BD%94%ED%94%84",
     "date": "2025-04-27"
   },
   {
     "notionId": "1e35ca9b-265e-8070-b889-d676ea1bcba8",
     "title": "[모던 자바스크립트 Deep Dive] - 18 함수와 일급 객체",
     "slug": "모던-자바스크립트-Deep-Dive-18-함수와-일급-객체",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-18-%ED%95%A8%EC%88%98%EC%99%80-%EC%9D%BC%EA%B8%89-%EA%B0%9D%EC%B2%B4",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-18-%ED%95%A8%EC%88%98%EC%99%80-%EC%9D%BC%EA%B8%89-%EA%B0%9D%EC%B2%B4",
     "date": "2025-04-28"
   },
   {
     "notionId": "1e55ca9b-265e-8087-8a2e-fedf42f12423",
     "title": "[모던 자바스크립트 Deep Dive] - 19 프로토타입",
     "slug": "모던-자바스크립트-Deep-Dive-19-프로토타입",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-19-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-19-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85",
     "date": "2025-04-30"
   },
   {
     "notionId": "1ee5ca9b-265e-8052-9e0b-d2827e137c88",
     "title": "[데이터베이스] 정규화 (1NF, 2NF, 3NF, BCNF)",
     "slug": "데이터베이스-정규화-1NF-2NF-3NF-BCNF",
-    "encodedSlug": "%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%A0%95%EA%B7%9C%ED%99%94-1NF-2NF-3NF-BCNF",
+    "encodedSlug": "%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%A0%95%EA%B7%9C%ED%99%94-1nf-2nf-3nf-bcnf",
     "date": "2025-05-09"
   },
   {
     "notionId": "1f45ca9b-265e-80c6-bfb6-df57851ecd41",
     "title": "Prisma로 처음 ORM을 써봤습니다",
     "slug": "Prisma로-처음-ORM을-써봤습니다",
-    "encodedSlug": "Prisma%EB%A1%9C-%EC%B2%98%EC%9D%8C-ORM%EC%9D%84-%EC%8D%A8%EB%B4%A4%EC%8A%B5%EB%8B%88%EB%8B%A4",
+    "encodedSlug": "prisma%EB%A1%9C-%EC%B2%98%EC%9D%8C-orm%EC%9D%84-%EC%8D%A8%EB%B4%A4%EC%8A%B5%EB%8B%88%EB%8B%A4",
     "date": "2025-05-19"
   },
   {
     "notionId": "1f95ca9b-265e-8093-8d96-d5a19c4c7e9b",
     "title": "GraphQL 개념 정리하기",
     "slug": "GraphQL-개념-정리하기",
-    "encodedSlug": "GraphQL-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0",
+    "encodedSlug": "graphql-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0",
     "date": "2025-05-20"
   },
   {
     "notionId": "1fa5ca9b-265e-8050-b7ac-d222aff745a0",
     "title": "[모던 자바스크립트 Deep Dive] - 21 빌트인 객체",
     "slug": "모던-자바스크립트-Deep-Dive-21-빌트인-객체",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-21-%EB%B9%8C%ED%8A%B8%EC%9D%B8-%EA%B0%9D%EC%B2%B4",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-21-%EB%B9%8C%ED%8A%B8%EC%9D%B8-%EA%B0%9D%EC%B2%B4",
     "date": "2025-05-21"
   },
   {
     "notionId": "1fd5ca9b-265e-80d7-b51c-c131498dbded",
     "title": "[모던 자바스크립트 Deep Dive] - 22 this",
     "slug": "모던-자바스크립트-Deep-Dive-22-this",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-22-this",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-22-this",
     "date": "2025-05-24"
   },
   {
     "notionId": "1fe5ca9b-265e-80c2-ab22-e7533dafeda1",
     "title": "[모던 자바스크립트 Deep Dive] - 23 실행 컨텍스트",
     "slug": "모던-자바스크립트-Deep-Dive-23-실행-컨텍스트",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-23-%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-23-%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8",
     "date": "2025-05-25"
   },
   {
     "notionId": "1fe5ca9b-265e-80fc-83ca-f298bb3bc1f0",
     "title": "Node.js는 왜 싱글 스레드를 고집할까?",
     "slug": "Nodejs는-왜-싱글-스레드를-고집할까",
-    "encodedSlug": "Nodejs%EB%8A%94-%EC%99%9C-%EC%8B%B1%EA%B8%80-%EC%8A%A4%EB%A0%88%EB%93%9C%EB%A5%BC-%EA%B3%A0%EC%A7%91%ED%95%A0%EA%B9%8C",
+    "encodedSlug": "nodejs%EB%8A%94-%EC%99%9C-%EC%8B%B1%EA%B8%80-%EC%8A%A4%EB%A0%88%EB%93%9C%EB%A5%BC-%EA%B3%A0%EC%A7%91%ED%95%A0%EA%B9%8C",
     "date": "2025-05-26"
   },
   {
@@ -584,49 +584,49 @@
     "notionId": "2005ca9b-265e-803b-b2cf-f809a1f822be",
     "title": "[모던 자바스크립트 Deep Dive] - 24 클로저",
     "slug": "모던-자바스크립트-Deep-Dive-24-클로저",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-24-%ED%81%B4%EB%A1%9C%EC%A0%80",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-24-%ED%81%B4%EB%A1%9C%EC%A0%80",
     "date": "2025-05-27"
   },
   {
     "notionId": "2015ca9b-265e-80c1-b753-e90a6afa5047",
     "title": "[자료구조] 해시 테이블(Hash Table)이란? (Feat. JavaScript)",
     "slug": "자료구조-해시-테이블Hash-Table이란-Feat-JavaScript",
-    "encodedSlug": "%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%ED%95%B4%EC%8B%9C-%ED%85%8C%EC%9D%B4%EB%B8%94Hash-Table%EC%9D%B4%EB%9E%80-Feat-JavaScript",
+    "encodedSlug": "%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%ED%95%B4%EC%8B%9C-%ED%85%8C%EC%9D%B4%EB%B8%94hash-table%EC%9D%B4%EB%9E%80-feat-javascript",
     "date": "2025-05-28"
   },
   {
     "notionId": "2025ca9b-265e-800c-aa25-c24420efbc6a",
     "title": "[네트워크] 응용 계층 심화 (쿠키, 세션, HTTPS)",
     "slug": "네트워크-응용-계층-심화-쿠키-세션-HTTPS",
-    "encodedSlug": "%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%9D%91%EC%9A%A9-%EA%B3%84%EC%B8%B5-%EC%8B%AC%ED%99%94-%EC%BF%A0%ED%82%A4-%EC%84%B8%EC%85%98-HTTPS",
+    "encodedSlug": "%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%9D%91%EC%9A%A9-%EA%B3%84%EC%B8%B5-%EC%8B%AC%ED%99%94-%EC%BF%A0%ED%82%A4-%EC%84%B8%EC%85%98-https",
     "date": "2025-05-29"
   },
   {
     "notionId": "2035ca9b-265e-8000-af81-de72dd3c2129",
     "title": "자바스크립트 Promise 개념 & 예제 총정리",
     "slug": "자바스크립트-Promise-개념-예제-총정리",
-    "encodedSlug": "%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Promise-%EA%B0%9C%EB%85%90-%EC%98%88%EC%A0%9C-%EC%B4%9D%EC%A0%95%EB%A6%AC",
+    "encodedSlug": "%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-promise-%EA%B0%9C%EB%85%90-%EC%98%88%EC%A0%9C-%EC%B4%9D%EC%A0%95%EB%A6%AC",
     "date": "2025-05-30"
   },
   {
     "notionId": "2035ca9b-265e-80e9-96b6-c1c832473f18",
     "title": "MSA란 무엇인가? 개념과 장단점 찍먹해보기",
     "slug": "MSA란-무엇인가-개념과-장단점-찍먹해보기",
-    "encodedSlug": "MSA%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%9E%A5%EB%8B%A8%EC%A0%90-%EC%B0%8D%EB%A8%B9%ED%95%B4%EB%B3%B4%EA%B8%B0",
+    "encodedSlug": "msa%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%9E%A5%EB%8B%A8%EC%A0%90-%EC%B0%8D%EB%A8%B9%ED%95%B4%EB%B3%B4%EA%B8%B0",
     "date": "2025-05-30"
   },
   {
     "notionId": "2065ca9b-265e-8054-81cb-f98b026f470a",
     "title": "단축 URL 서비스를 어떻게 설계할 것인가?",
     "slug": "단축-URL-서비스를-어떻게-설계할-것인가",
-    "encodedSlug": "%EB%8B%A8%EC%B6%95-URL-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%84%A4%EA%B3%84%ED%95%A0-%EA%B2%83%EC%9D%B8%EA%B0%80",
+    "encodedSlug": "%EB%8B%A8%EC%B6%95-url-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%84%A4%EA%B3%84%ED%95%A0-%EA%B2%83%EC%9D%B8%EA%B0%80",
     "date": "2025-06-02"
   },
   {
     "notionId": "20c5ca9b-265e-80aa-8138-e715d43fd0c7",
     "title": "API 서버와 데이터베이스 간 네트워크 지연 문제 해결기 (ft. Supabase 리전 변경)",
     "slug": "API-서버와-데이터베이스-간-네트워크-지연-문제-해결기-ft-Supabase-리전-변경",
-    "encodedSlug": "API-%EC%84%9C%EB%B2%84%EC%99%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EA%B0%84-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%A7%80%EC%97%B0-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%EA%B8%B0-ft-Supabase-%EB%A6%AC%EC%A0%84-%EB%B3%80%EA%B2%BD",
+    "encodedSlug": "api-%EC%84%9C%EB%B2%84%EC%99%80-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EA%B0%84-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%A7%80%EC%97%B0-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%EA%B8%B0-ft-supabase-%EB%A6%AC%EC%A0%84-%EB%B3%80%EA%B2%BD",
     "date": "2025-06-08"
   },
   {
@@ -647,14 +647,14 @@
     "notionId": "2115ca9b-265e-8087-b227-d36e1b0f81b8",
     "title": "[NestJS] DI/IoC (의존성 주입/제어의 역전)",
     "slug": "NestJS-DIIoC-의존성-주입제어의-역전",
-    "encodedSlug": "NestJS-DIIoC-%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%A3%BC%EC%9E%85%EC%A0%9C%EC%96%B4%EC%9D%98-%EC%97%AD%EC%A0%84",
+    "encodedSlug": "nestjs-diioc-%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%A3%BC%EC%9E%85%EC%A0%9C%EC%96%B4%EC%9D%98-%EC%97%AD%EC%A0%84",
     "date": "2025-06-13"
   },
   {
     "notionId": "22a5ca9b-265e-80ce-beb2-cfa44acc3c23",
     "title": "[모던 자바스크립트 Deep Dive] - 25 클래스",
     "slug": "모던-자바스크립트-Deep-Dive-25-클래스",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-25-%ED%81%B4%EB%9E%98%EC%8A%A4",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-25-%ED%81%B4%EB%9E%98%EC%8A%A4",
     "date": "2025-07-08"
   },
   {
@@ -689,7 +689,7 @@
     "notionId": "24c5ca9b-265e-80c4-bf25-de52d9ccf354",
     "title": "[모던 자바스크립트 Deep Dive] - 26 ES6 함수의 추가 기능",
     "slug": "모던-자바스크립트-Deep-Dive-26-ES6-함수의-추가-기능",
-    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Deep-Dive-26-ES6-%ED%95%A8%EC%88%98%EC%9D%98-%EC%B6%94%EA%B0%80-%EA%B8%B0%EB%8A%A5",
+    "encodedSlug": "%EB%AA%A8%EB%8D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-deep-dive-26-es6-%ED%95%A8%EC%88%98%EC%9D%98-%EC%B6%94%EA%B0%80-%EA%B8%B0%EB%8A%A5",
     "date": "2025-08-11"
   },
   {
@@ -745,7 +745,7 @@
     "notionId": "2de5ca9b-265e-80c1-bf96-d7a9d2922301",
     "title": "트랜잭션 스크립트 패턴, 도메인 모델 패턴, ORM",
     "slug": "트랜잭션-스크립트-패턴-도메인-모델-패턴-ORM",
-    "encodedSlug": "%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%ED%8C%A8%ED%84%B4-%EB%8F%84%EB%A9%94%EC%9D%B8-%EB%AA%A8%EB%8D%B8-%ED%8C%A8%ED%84%B4-ORM",
+    "encodedSlug": "%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%ED%8C%A8%ED%84%B4-%EB%8F%84%EB%A9%94%EC%9D%B8-%EB%AA%A8%EB%8D%B8-%ED%8C%A8%ED%84%B4-orm",
     "date": "2025-10-16"
   },
   {
@@ -759,7 +759,7 @@
     "notionId": "2de5ca9b-265e-807d-af00-e38f9b25ded8",
     "title": "문자 집합의 발전 과정과 MySQL utf8mb3 vs utf8mb4 차이",
     "slug": "문자-집합의-발전-과정과-MySQL-utf8mb3-vs-utf8mb4-차이",
-    "encodedSlug": "%EB%AC%B8%EC%9E%90-%EC%A7%91%ED%95%A9%EC%9D%98-%EB%B0%9C%EC%A0%84-%EA%B3%BC%EC%A0%95%EA%B3%BC-MySQL-utf8mb3-vs-utf8mb4-%EC%B0%A8%EC%9D%B4",
+    "encodedSlug": "%EB%AC%B8%EC%9E%90-%EC%A7%91%ED%95%A9%EC%9D%98-%EB%B0%9C%EC%A0%84-%EA%B3%BC%EC%A0%95%EA%B3%BC-mysql-utf8mb3-vs-utf8mb4-%EC%B0%A8%EC%9D%B4",
     "date": "2025-10-21"
   },
   {
@@ -773,7 +773,7 @@
     "notionId": "2de5ca9b-265e-8083-b079-d80d6850980d",
     "title": "세션 기반 인증 vs 토큰 기반 인증 / JWT 학습",
     "slug": "세션-기반-인증-vs-토큰-기반-인증-JWT-학습",
-    "encodedSlug": "%EC%84%B8%EC%85%98-%EA%B8%B0%EB%B0%98-%EC%9D%B8%EC%A6%9D-vs-%ED%86%A0%ED%81%B0-%EA%B8%B0%EB%B0%98-%EC%9D%B8%EC%A6%9D-JWT-%ED%95%99%EC%8A%B5",
+    "encodedSlug": "%EC%84%B8%EC%85%98-%EA%B8%B0%EB%B0%98-%EC%9D%B8%EC%A6%9D-vs-%ED%86%A0%ED%81%B0-%EA%B8%B0%EB%B0%98-%EC%9D%B8%EC%A6%9D-jwt-%ED%95%99%EC%8A%B5",
     "date": "2025-10-29"
   },
   {
@@ -787,7 +787,7 @@
     "notionId": "2de5ca9b-265e-80ea-a48c-d9ae1a87004b",
     "title": "CSRF 공격과 XSS 공격",
     "slug": "CSRF-공격과-XSS-공격",
-    "encodedSlug": "CSRF-%EA%B3%B5%EA%B2%A9%EA%B3%BC-XSS-%EA%B3%B5%EA%B2%A9",
+    "encodedSlug": "csrf-%EA%B3%B5%EA%B2%A9%EA%B3%BC-xss-%EA%B3%B5%EA%B2%A9",
     "date": "2025-11-08"
   },
   {
@@ -843,7 +843,7 @@
     "notionId": "2db5ca9b-265e-80b1-96ef-e3252bbe7682",
     "title": "[백준] 11057 오르막 수 (JavaScript)",
     "slug": "백준-11057-오르막-수-JavaScript",
-    "encodedSlug": "%EB%B0%B1%EC%A4%80-11057-%EC%98%A4%EB%A5%B4%EB%A7%89-%EC%88%98-JavaScript",
+    "encodedSlug": "%EB%B0%B1%EC%A4%80-11057-%EC%98%A4%EB%A5%B4%EB%A7%89-%EC%88%98-javascript",
     "date": "2026-01-01"
   },
   {
@@ -857,7 +857,7 @@
     "notionId": "2dd5ca9b-265e-8065-950d-d1853eaff6aa",
     "title": "[가상 면접 사례로 배우는 대규모 시스템 설계 기초] 8. URL 단축기 설계",
     "slug": "가상-면접-사례로-배우는-대규모-시스템-설계-기초-8-URL-단축기-설계",
-    "encodedSlug": "%EA%B0%80%EC%83%81-%EB%A9%B4%EC%A0%91-%EC%82%AC%EB%A1%80%EB%A1%9C-%EB%B0%B0%EC%9A%B0%EB%8A%94-%EB%8C%80%EA%B7%9C%EB%AA%A8-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%84%A4%EA%B3%84-%EA%B8%B0%EC%B4%88-8-URL-%EB%8B%A8%EC%B6%95%EA%B8%B0-%EC%84%A4%EA%B3%84",
+    "encodedSlug": "%EA%B0%80%EC%83%81-%EB%A9%B4%EC%A0%91-%EC%82%AC%EB%A1%80%EB%A1%9C-%EB%B0%B0%EC%9A%B0%EB%8A%94-%EB%8C%80%EA%B7%9C%EB%AA%A8-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%84%A4%EA%B3%84-%EA%B8%B0%EC%B4%88-8-url-%EB%8B%A8%EC%B6%95%EA%B8%B0-%EC%84%A4%EA%B3%84",
     "date": "2026-01-03"
   },
   {
@@ -871,7 +871,7 @@
     "notionId": "2e25ca9b-265e-809a-8804-cfc44d7ce71f",
     "title": "[프로그래머스] 서버 증설 횟수 (JavaScript)",
     "slug": "프로그래머스-서버-증설-횟수-JavaScript",
-    "encodedSlug": "%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%84%9C%EB%B2%84-%EC%A6%9D%EC%84%A4-%ED%9A%9F%EC%88%98-JavaScript",
+    "encodedSlug": "%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%84%9C%EB%B2%84-%EC%A6%9D%EC%84%A4-%ED%9A%9F%EC%88%98-javascript",
     "date": "2026-01-08"
   },
   {
@@ -892,7 +892,7 @@
     "notionId": "2ec5ca9b-265e-8096-a35b-ee77223efc00",
     "title": "Sequelize vs TypeORM vs Prisma",
     "slug": "Sequelize-vs-TypeORM-vs-Prisma",
-    "encodedSlug": "Sequelize-vs-TypeORM-vs-Prisma",
+    "encodedSlug": "sequelize-vs-typeorm-vs-prisma",
     "date": "2026-01-18"
   },
   {
@@ -906,7 +906,7 @@
     "notionId": "2ec5ca9b-265e-80dd-afe3-e522261f3a09",
     "title": "Prisma 학습 정리",
     "slug": "Prisma-학습-정리",
-    "encodedSlug": "Prisma-%ED%95%99%EC%8A%B5-%EC%A0%95%EB%A6%AC",
+    "encodedSlug": "prisma-%ED%95%99%EC%8A%B5-%EC%A0%95%EB%A6%AC",
     "date": "2026-01-18"
   },
   {
@@ -927,7 +927,7 @@
     "notionId": "2f35ca9b-265e-80f4-9a44-f7d72fa31ac6",
     "title": "[프로그래머스] 지게차와 크레인 (Python)",
     "slug": "프로그래머스-지게차와-크레인-Python",
-    "encodedSlug": "%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%A7%80%EA%B2%8C%EC%B0%A8%EC%99%80-%ED%81%AC%EB%A0%88%EC%9D%B8-Python",
+    "encodedSlug": "%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%A7%80%EA%B2%8C%EC%B0%A8%EC%99%80-%ED%81%AC%EB%A0%88%EC%9D%B8-python",
     "date": "2026-01-25"
   },
   {
@@ -962,7 +962,7 @@
     "notionId": "2ff5ca9b-265e-8003-8cec-e913ece0826b",
     "title": "[백준] 16918 봄버맨 (Python)",
     "slug": "백준-16918-봄버맨-Python",
-    "encodedSlug": "%EB%B0%B1%EC%A4%80-16918-%EB%B4%84%EB%B2%84%EB%A7%A8-Python",
+    "encodedSlug": "%EB%B0%B1%EC%A4%80-16918-%EB%B4%84%EB%B2%84%EB%A7%A8-python",
     "date": "2026-02-06"
   },
   {
@@ -976,7 +976,7 @@
     "notionId": "3005ca9b-265e-8005-bd0e-fcacac8abf96",
     "title": "boostus RSS 기반 크롤러 구현기",
     "slug": "boostus-RSS-기반-크롤러-구현기",
-    "encodedSlug": "boostus-RSS-%EA%B8%B0%EB%B0%98-%ED%81%AC%EB%A1%A4%EB%9F%AC-%EA%B5%AC%ED%98%84%EA%B8%B0",
+    "encodedSlug": "boostus-rss-%EA%B8%B0%EB%B0%98-%ED%81%AC%EB%A1%A4%EB%9F%AC-%EA%B5%AC%ED%98%84%EA%B8%B0",
     "date": "2026-02-10"
   },
   {
@@ -990,98 +990,98 @@
     "notionId": "30e5ca9b-265e-8041-9272-e34e68101d87",
     "title": "[백준] 탑 (Python)",
     "slug": "백준-탑-Python",
-    "encodedSlug": "%EB%B0%B1%EC%A4%80-%ED%83%91-Python",
+    "encodedSlug": "%EB%B0%B1%EC%A4%80-%ED%83%91-python",
     "date": "2026-02-21"
   },
   {
     "notionId": "30e5ca9b-265e-80a3-9cb6-e7899d14e21d",
     "title": "Docker 로그는 어디에 저장되는걸까?",
     "slug": "Docker-로그는-어디에-저장되는걸까",
-    "encodedSlug": "Docker-%EB%A1%9C%EA%B7%B8%EB%8A%94-%EC%96%B4%EB%94%94%EC%97%90-%EC%A0%80%EC%9E%A5%EB%90%98%EB%8A%94%EA%B1%B8%EA%B9%8C",
+    "encodedSlug": "docker-%EB%A1%9C%EA%B7%B8%EB%8A%94-%EC%96%B4%EB%94%94%EC%97%90-%EC%A0%80%EC%9E%A5%EB%90%98%EB%8A%94%EA%B1%B8%EA%B9%8C",
     "date": "2026-02-22"
   },
   {
     "notionId": "3105ca9b-265e-8077-896c-e167515c118b",
     "title": "[백준] 회전하는 큐 (Python)",
     "slug": "백준-회전하는-큐-Python",
-    "encodedSlug": "%EB%B0%B1%EC%A4%80-%ED%9A%8C%EC%A0%84%ED%95%98%EB%8A%94-%ED%81%90-Python",
+    "encodedSlug": "%EB%B0%B1%EC%A4%80-%ED%9A%8C%EC%A0%84%ED%95%98%EB%8A%94-%ED%81%90-python",
     "date": "2026-02-23"
   },
   {
     "notionId": "3115ca9b-265e-803a-9202-e2297c180be0",
     "title": "Prometheus 란 무엇일까?",
     "slug": "Prometheus-란-무엇일까",
-    "encodedSlug": "Prometheus-%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C",
+    "encodedSlug": "prometheus-%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C",
     "date": "2026-02-24"
   },
   {
     "notionId": "3115ca9b-265e-8080-967b-dccd7f169a77",
     "title": "Grafana 란 무엇일까?",
     "slug": "Grafana-란-무엇일까",
-    "encodedSlug": "Grafana-%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C",
+    "encodedSlug": "grafana-%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C",
     "date": "2026-02-24"
   },
   {
     "notionId": "30c5ca9b-265e-80ae-b387-fff81dcb3eca",
     "title": "NestJS 메트릭 기반 모니터링 시스템 구축 (prom-client, Prometheus, Grafana)",
     "slug": "NestJS-메트릭-기반-모니터링-시스템-구축-prom-client-Prometheus-Grafana",
-    "encodedSlug": "NestJS-%EB%A9%94%ED%8A%B8%EB%A6%AD-%EA%B8%B0%EB%B0%98-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95-prom-client-Prometheus-Grafana",
+    "encodedSlug": "nestjs-%EB%A9%94%ED%8A%B8%EB%A6%AD-%EA%B8%B0%EB%B0%98-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95-prom-client-prometheus-grafana",
     "date": "2026-02-25"
   },
   {
     "notionId": "3135ca9b-265e-8005-8ff4-f321aca4de60",
     "title": "Promtail 이란 무엇일까?",
     "slug": "Promtail-이란-무엇일까",
-    "encodedSlug": "Promtail-%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C",
+    "encodedSlug": "promtail-%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C",
     "date": "2026-02-26"
   },
   {
     "notionId": "3135ca9b-265e-8018-9a9e-e1d08bc02506",
     "title": "Grafana Loki 란 무엇일까?",
     "slug": "Grafana-Loki-란-무엇일까",
-    "encodedSlug": "Grafana-Loki-%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C",
+    "encodedSlug": "grafana-loki-%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C",
     "date": "2026-02-26"
   },
   {
     "notionId": "3135ca9b-265e-8072-93f1-f18f74671b35",
     "title": "NestJS 로그 기반 모니터링 시스템 구축 (Promtail, Grafana Loki)",
     "slug": "NestJS-로그-기반-모니터링-시스템-구축-Promtail-Grafana-Loki",
-    "encodedSlug": "NestJS-%EB%A1%9C%EA%B7%B8-%EA%B8%B0%EB%B0%98-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95-Promtail-Grafana-Loki",
+    "encodedSlug": "nestjs-%EB%A1%9C%EA%B7%B8-%EA%B8%B0%EB%B0%98-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95-promtail-grafana-loki",
     "date": "2026-02-26"
   },
   {
     "notionId": "3145ca9b-265e-8028-9953-f659ea1a9c67",
     "title": "모니터링의 중요성 (Feat. Node.js 핵심 지표)",
     "slug": "모니터링의-중요성-Feat-Nodejs-핵심-지표",
-    "encodedSlug": "%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81%EC%9D%98-%EC%A4%91%EC%9A%94%EC%84%B1-Feat-Nodejs-%ED%95%B5%EC%8B%AC-%EC%A7%80%ED%91%9C",
+    "encodedSlug": "%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81%EC%9D%98-%EC%A4%91%EC%9A%94%EC%84%B1-feat-nodejs-%ED%95%B5%EC%8B%AC-%EC%A7%80%ED%91%9C",
     "date": "2026-02-27"
   },
   {
     "notionId": "3165ca9b-265e-807f-a413-cd2faeb97296",
     "title": "[백준] 1914 하노이 탑 (Python)",
     "slug": "백준-1914-하노이-탑-Python",
-    "encodedSlug": "%EB%B0%B1%EC%A4%80-1914-%ED%95%98%EB%85%B8%EC%9D%B4-%ED%83%91-Python",
+    "encodedSlug": "%EB%B0%B1%EC%A4%80-1914-%ED%95%98%EB%85%B8%EC%9D%B4-%ED%83%91-python",
     "date": "2026-03-01"
   },
   {
     "notionId": "3415ca9b-265e-802e-9975-d8f7cb9e39d9",
     "title": "조회수 API의 DB 병목을 Redis로 해결하기",
     "slug": "조회수-API의-DB-병목을-Redis로-해결하기",
-    "encodedSlug": "%EC%A1%B0%ED%9A%8C%EC%88%98-API%EC%9D%98-DB-%EB%B3%91%EB%AA%A9%EC%9D%84-Redis%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0",
+    "encodedSlug": "%EC%A1%B0%ED%9A%8C%EC%88%98-api%EC%9D%98-db-%EB%B3%91%EB%AA%A9%EC%9D%84-redis%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0",
     "date": "2026-04-13"
   },
   {
     "notionId": "3735ca9b-265e-8013-bb7d-e367417bdbf6",
     "title": "Codex와 Obsidian 연동하기",
     "slug": "Codex와-Obsidian-연동하기",
-    "encodedSlug": "Codex%EC%99%80-Obsidian-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0",
+    "encodedSlug": "codex%EC%99%80-obsidian-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0",
     "date": "2026-06-02"
   },
   {
     "notionId": "3f25ca9b-265e-8050-800f-eb613204917a",
     "title": "Redis 장애 시 RDBMS의 연쇄적인 장애에 대응하기 위한 전략",
     "slug": "Redis-장애-시-RDBMS의-연쇄적인-장애에-대응하기-위한-전략",
-    "encodedSlug": "Redis-%EC%9E%A5%EC%95%A0-%EC%8B%9C-RDBMS%EC%9D%98-%EC%97%B0%EC%87%84%EC%A0%81%EC%9D%B8-%EC%9E%A5%EC%95%A0%EC%97%90-%EB%8C%80%EC%9D%91%ED%95%98%EA%B8%B0-%EC%9C%84%ED%95%9C-%EC%A0%84%EB%9E%B5",
+    "encodedSlug": "redis-%EC%9E%A5%EC%95%A0-%EC%8B%9C-rdbms%EC%9D%98-%EC%97%B0%EC%87%84%EC%A0%81%EC%9D%B8-%EC%9E%A5%EC%95%A0%EC%97%90-%EB%8C%80%EC%9D%91%ED%95%98%EA%B8%B0-%EC%9C%84%ED%95%9C-%EC%A0%84%EB%9E%B5",
     "date": "2026-10-09"
   }
 ]

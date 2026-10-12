@@ -67,3 +67,9 @@ test('assignSlugs: encodedSlug는 퍼센트 인코딩된 값', () => {
   assert.equal(e.slug, '한글-글');
   assert.equal(e.encodedSlug, encodeURIComponent('한글-글'));
 });
+
+test('assignSlugs: encodedSlug는 사이트가 쓰는 정규 URL(소문자)이고 slug는 파일명 그대로', () => {
+  const [e] = assignSlugs([{ notionId: 'a', title: 'NestJS 설치하기', date: '2024-01-01' }]);
+  assert.equal(e.slug, 'NestJS-설치하기');
+  assert.equal(e.encodedSlug, encodeURIComponent('nestjs-설치하기'));
+});

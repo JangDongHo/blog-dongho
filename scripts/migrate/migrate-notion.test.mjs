@@ -89,7 +89,8 @@ test('migrate: 파일·이미지·매핑·리포트를 생성한다', async () =
   const map = JSON.parse(await fs.readFile(t.mapPath, 'utf8'));
   assert.equal(map.length, 3);
   assert.deepEqual(Object.keys(map[0]).sort(), ['date', 'encodedSlug', 'notionId', 'slug', 'title']);
-  assert.equal(map[0].encodedSlug, enc);
+  // 리디렉션용 encodedSlug는 소문자 정규 URL, 이미지 경로(enc)는 디렉터리명 그대로
+  assert.equal(map[0].encodedSlug, encodeURIComponent('redis-센티넬-구성'));
 
   const report = await fs.readFile(t.reportPath, 'utf8');
   assert.match(report, /bad\.png/);
