@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -36,6 +37,21 @@ for (const e of map) {
   for (const m of html.matchAll(/<img[^>]+src="(\/[^"]+)"/g)) {
     const file = path.join(DIST, decodeURIComponent(m[1].split('?')[0]));
     if (!(await exists(file))) failures.push(`이미지 없음: ${e.slug} → ${m[1]}`);
+  }
+}
+
+// 3b) 글이 참조하는 첨부 파일(이미지·영상·PDF 등 링크 포함)이 git에 추적되고 있어야 한다.
+//     디스크에만 있는 파일은 로컬 빌드는 통과시키지만 배포(클린 체크아웃)에서는 404가 된다.
+const tracked = new Set(
+  execFileSync('git', ['ls-files', '-z', 'src/content/posts/attachments'], { cwd: ROOT, encoding: 'utf8' })
+    .split('\0')
+    .filter(Boolean),
+);
+for (const f of mdFiles) {
+  const text = await fs.readFile(path.join(POSTS, f), 'utf8');
+  for (const m of text.matchAll(/\]\((\/posts\/attachments\/[^)\s]+)\)/g)) {
+    const rel = path.posix.join('src/content', decodeURIComponent(m[1]).replace(/^\/posts\//, 'posts/'));
+    if (!tracked.has(rel)) failures.push(`git에 추적되지 않은 첨부: ${f} → ${rel}`);
   }
 }
 

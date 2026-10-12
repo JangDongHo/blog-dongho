@@ -163,3 +163,8 @@ test('fixDetailsSpacing: </summary> 뒤에 빈 줄이 없으면 추가하고, �
     '<details>\n<summary>a</summary>\n\n- x\n\n</details>\n\n<details>\n<summary>b</summary>\n\n```sh\nls\n```\n</details>',
   );
 });
+
+test('extractDescription: 첫 문단이 콜아웃이면 [!note] 태그를 제외한 본문을 쓴다', () => {
+  const md = '> [!note]\n> 💡 본 포스팅은 안내입니다\n\n다음 문단';
+  assert.equal(extractDescription(md), '💡 본 포스팅은 안내입니다');
+});

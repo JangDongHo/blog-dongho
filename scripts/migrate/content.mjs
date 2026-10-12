@@ -20,7 +20,8 @@ function toPlain(block) {
     .replace(/^\s{0,3}(>|[-*+]|\d+\.)\s+/gm, '')
     .replace(/[*_`~$]/g, '')
     .replace(/\s+/g, ' ')
-    .trim();
+    .trim()
+    .replace(/^\[![A-Za-z]+\]\s*/, ''); // 콜아웃 태그 `[!note]`
 }
 
 export function extractDescription(markdown, fallback = '', max = 160) {
