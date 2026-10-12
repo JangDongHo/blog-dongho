@@ -1,7 +1,6 @@
 ---
 import type { ImageInfo } from '@/types';
 import { processImageLayout } from '@/utils/images';
-import Icon from './Icon.astro';
 import ImageWrapper from './ImageWrapper.astro';
 
 export interface Props {
@@ -37,9 +36,6 @@ const { layout: finalLayout, images: finalImages } = processedLayout;
             quality={85}
             loading="lazy"
           />
-          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 rounded-lg flex items-center justify-center">
-            <Icon name="zoom-in" class="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </div>
         </button>
       </div>
     ))}
