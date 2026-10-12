@@ -65,10 +65,12 @@
     "unist-util-visit": "^5.1.0"
   },
   "devDependencies": {
+    "@notionhq/client": "^5.27.0",
     "@types/hast": "^3.0.4",
     "@types/mdast": "^4.0.4",
     "@types/unist": "^3.0.3",
     "cross-env": "^10.1.0",
+    "notion-to-md": "3.1.9",
     "wrangler": "^4.71.0"
   },
   "pnpm": {
