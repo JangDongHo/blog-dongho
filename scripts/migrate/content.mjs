@@ -100,6 +100,9 @@ export function calloutToMarkdown(callout, childMarkdown = '') {
   if (children) {
     if (lines.length) lines.push('');
     lines.push(...children.split('\n'));
+    // 테마(remark-callouts)는 콜아웃이 여러 블록이면 `[!note]`가 든 첫 문단을 선언 줄로 보고 통째로
+    // 버린다. 제목이 `[!note]` 줄에 붙어 있으면 함께 사라지므로 빈 줄로 문단을 분리한다.
+    lines.unshift('');
   }
   return ['> [!note]', ...lines.map((l) => (l.trim() ? `> ${l}` : '>'))].join('\n');
 }

@@ -170,17 +170,17 @@ test('extractDescription: 첫 문단이 콜아웃이면 [!note] 태그를 제외
   assert.equal(extractDescription(md), '💡 본 포스팅은 안내입니다');
 });
 
-test('calloutToMarkdown: 자식 블록 내용을 제목 아래에 같은 콜아웃으로 포함 (구분선이 제목을 제목행으로 만들지 않도록 빈 줄)', () => {
+test('calloutToMarkdown: 자식이 있으면 [!note] 뒤에 빈 줄을 두어 제목이 테마의 선언 줄로 버려지지 않게 한다', () => {
   const callout = { icon: null, rich_text: [{ plain_text: 'HTML vs XML', annotations: { bold: true } }] };
   assert.equal(
     calloutToMarkdown(callout, '---\n\n1. HTML\n2. XML'),
-    '> [!note]\n> **HTML vs XML**\n>\n> ---\n>\n> 1. HTML\n> 2. XML',
+    '> [!note]\n>\n> **HTML vs XML**\n>\n> ---\n>\n> 1. HTML\n> 2. XML',
   );
 });
 
 test('calloutToMarkdown: 제목 없이 자식만 있어도 콜아웃으로 출력', () => {
   const callout = { icon: null, rich_text: [] };
-  assert.equal(calloutToMarkdown(callout, '본문 내용'), '> [!note]\n> 본문 내용');
+  assert.equal(calloutToMarkdown(callout, '본문 내용'), '> [!note]\n>\n> 본문 내용');
 });
 
 test('removeExcludedFileLinks: 제외 확장자의 Notion 첨부 링크만 단독 줄에서 제거', () => {
