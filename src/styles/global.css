@@ -874,6 +874,24 @@ textarea {
   aspect-ratio: auto !important;
 }
 
+/* 갤러리로 감싼 이미지도 자르지 않고 원본 비율 그대로 글 너비에 맞춘다.
+   (기본값은 16:9 + object-fit: cover라 세로로 긴 스크린샷이 잘리고 클릭해야 전체가 보인다.)
+   클릭 시 라이트박스는 그대로 유지된다. */
+.prose .image-grid {
+  align-items: start;
+}
+
+.prose .image-grid .image-item .image-button img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.prose .image-grid .image-item .image-button {
+  height: auto;
+}
+
 /* Hide <br> elements after obsidian-sized images to prevent unwanted gaps */
 .prose img.obsidian-sized + br {
   display: none;
