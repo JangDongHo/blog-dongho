@@ -781,11 +781,6 @@ textarea {
   border: none;
   background: none;
   cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.prose .image-grid .image-button:hover {
-  transform: scale(1.02);
 }
 
 .prose .image-grid .image-button img {
@@ -793,11 +788,6 @@ textarea {
   height: 100%;
   object-fit: cover;
   border-radius: 0.5rem;
-  transition: all 0.3s ease;
-}
-
-.prose .image-grid .image-button:hover img {
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 /* Prose Styles */
