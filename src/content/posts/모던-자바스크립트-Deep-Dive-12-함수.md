@@ -495,6 +495,7 @@ changeVal 함수는 매개변수를 통해 전달받은 원시 타입 인수와 
 
 
 > [!note]
+>
 > 💡 **옵저버 패턴(Observer Pattern)**
 >
 > ---

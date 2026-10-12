@@ -38,6 +38,7 @@ console.log(x); // ReferenceError: x is not defined
 
 
 > [!note]
+>
 > 💡 **변수는 바로 소멸될까?**
 >
 > ---
@@ -90,6 +91,7 @@ var 키워드로 선언한 전역 변수는 전역 객체의 프로퍼티가 된
 
 
 > [!note]
+>
 > 💡 **전역 객체(global object)**
 >
 > ---
@@ -238,6 +240,7 @@ console.log(Counter.decrease()); // 0
 
 
 > [!note]
+>
 > 💡 **캡슐화(encapsulation)란?**
 >
 > ---

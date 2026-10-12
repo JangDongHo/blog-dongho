@@ -354,12 +354,14 @@ SET attribute = value [, attribute = value, .. ]
 
 
 > [!note]
+>
 > **이전 글**
 >
 > [SQL로 데이터베이스 정의하기 [개념]](https://app.notion.com/p/16b5ca9b265e80faae70f3fc89b2b93a)
 
 
 > [!note]
+>
 > **다음 글 **
 >
 > [SQL로 데이터베이스에 데이터 추가, 수정, 삭제하기](https://app.notion.com/p/1705ca9b265e806a808acb78d6263839)

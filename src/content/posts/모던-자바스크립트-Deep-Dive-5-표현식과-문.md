@@ -248,6 +248,7 @@ console.log(foo()); // undefined
     - x = 100은 x 변수에 할당 값 100으로 평가된다. 따라서 foo 변수에는 100이 할당된다.
 
 > [!note]
+>
 > 💡 **완료 값(completion value)**
 >
 > ---

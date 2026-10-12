@@ -253,6 +253,7 @@ FROM table(s)
 
 
 > [!note]
+>
 > **이전 글**
 >
 > [SQL로 데이터베이스에 데이터 추가, 수정, 삭제하기](https://app.notion.com/p/1705ca9b265e806a808acb78d6263839)

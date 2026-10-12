@@ -218,6 +218,7 @@ A와 B 사이의 네트워크가 끊겼다. 이때 B 인스턴스 Sentinel은 A�
 
 
 > [!note]
+>
 > 💡 **Redis Client란?**
 >
 > Redis Client는 애플리케이션이 Redis Server와 통신할 수 있도록 해주는 라이브러리다.
@@ -277,6 +278,7 @@ Redis Client는 등록된 Sentinel 중 하나에 접속해서 “mymaster라는 
 
 
 > [!note]
+>
 > 💡 **Redis Pub/Sub 이란?**
 >
 > Redis Pub/Sub(Publish/Subscribe)은 메시지를 특정 채널에 발행하고, 해당 채널을 구독한 클라이언트가 메시지를 전달받는 방식이다.

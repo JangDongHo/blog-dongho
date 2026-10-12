@@ -181,6 +181,7 @@ arguments 객체는 인수를 프로퍼티 값으로 소유하며 프로퍼티 �
 
 
 > [!note]
+>
 > 💡 **arguments 객체의 Symbol(Symbol.iterator) 프로퍼티**
 >
 > ---
@@ -265,6 +266,7 @@ example(1, 2, 3);  // [1, 2, 3]
 
 
 > [!note]
+>
 > 💡 **유사 배열 객체와 이터러블**
 >
 > ---
@@ -371,6 +373,7 @@ console.log(obj.hasOwnProperty('__proto__')); // false
 
 
 > [!note]
+>
 > 💡 **hasOwnProperty 메서드**
 >
 > ---

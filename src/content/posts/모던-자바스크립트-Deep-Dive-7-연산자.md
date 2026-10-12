@@ -32,6 +32,7 @@ typeof 'Hi' // -> string
 
 
 > [!note]
+>
 > 💡 **부수 효과(side effect)**
 >
 > ---
@@ -327,6 +328,7 @@ Number.isNaN(1 + undefined); // -> true
 
 
 > [!note]
+>
 > 💡 **Object.is 메서드**
 >
 > ---
@@ -474,6 +476,7 @@ false && false; // -> false
 
 
 > [!note]
+>
 > 💡 **드 모르간의 법칙**
 >
 > ---

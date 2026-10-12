@@ -142,6 +142,7 @@ showAge();
 
 
 > [!note]
+>
 > - **const**
 >     - 한 번 값을 할당하면 다른 값을 할당할 수 없다.
 >         - 만약 다른 값을 할당하려고 하면 에러가 발생한다.
@@ -150,6 +151,7 @@ showAge();
 
 
 > [!note]
+>
 > - **let**
 >     - 다른 값을 할당할 수 있다.
 >     - 초기화할 때 값을 할당하지 않아도 된다.
@@ -174,6 +176,7 @@ const c; // Uncaught SyntaxError: Missing initializer in const declaration
 
 
 > [!note]
+>
 > **Q. const와 let과 var을 비교 설명하시오.
 > **
 >
@@ -398,6 +401,7 @@ newObject 안에서 `[es + 6]`가 속성명으로 바로 사용되고 있다.
 
 
 > [!note]
+>
 > **Q. 객체 리터럴과 함수와 클래스의 차이는?
 > **
 >
@@ -898,6 +902,7 @@ num.push() // 56;
 
 
 > [!note]
+>
 > **이전 글**
 >
 > [노드의 핵심 개념과 이벤트 루프 이해하기](https://app.notion.com/p/1595ca9b265e801f9800cd5bbb9c3dd6)

@@ -81,6 +81,7 @@ brew install postgresql@15
 
 
 > [!note]
+>
 > ❗ **pg_dump: error: server version 트러블슈팅**
 >
 > 간혹 pg_dump 클라이언트 버전(14.18)과 서버 버전(15.1)이 맞지 않아 오류가 발생할 수 있습니다.
@@ -163,6 +164,7 @@ PGPASSWORD={NEW_DB_PASSWORD} pg_restore \
 - `{NEW_PROJECT_REGION}`: 새 Supabase 프로젝트의 리전 (예: `aws-0-us-west-1`)
 
 > [!note]
+>
 > ❗ 
 >
 > ### **⚠️ 복원 중 오류 메시지가 떴다면?**
