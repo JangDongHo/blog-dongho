@@ -72,12 +72,5 @@
     "cross-env": "^10.1.0",
     "notion-to-md": "3.1.9",
     "wrangler": "^4.71.0"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "sharp",
-      "workerd"
-    ]
   }
 }

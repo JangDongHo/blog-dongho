@@ -1,0 +1,6 @@
+# pnpm 10+는 의존성의 빌드 스크립트를 기본 차단한다. package.json의 `pnpm.onlyBuiltDependencies`는
+# pnpm 11부터 읽지 않으므로 이 파일의 allowBuilds로 허용 여부를 지정한다.
+allowBuilds:
+  esbuild: true
+  sharp: true
+  workerd: false # wrangler(Cloudflare) 전용이며 Netlify 배포에는 쓰지 않는다
