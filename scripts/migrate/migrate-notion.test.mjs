@@ -48,7 +48,7 @@ const POSTS = [
     notionId: ID(1), title: 'Redis: 센티넬 "구성"', date: '2024-01-05', dateFallback: false,
     markdown: '# 개요\n\n본문 첫 문단\n\n![a](https://img.test/a.png?sig=1)\n![b](https://img.test/bad.png)\n\n[녹화.mov](https://prod-files-secure.s3.us-west-2.amazonaws.com/x/rec.mov?X-Amz=1)\n\n[bookmark](https://example.com/p)',
   },
-  { notionId: ID(2), title: 'Redis: 센티넬 "구성"', date: '2024-02-01', dateFallback: false, markdown: '```yaml\ncleanUrl: /x\nfloatFirstTOC: right\n```\n\n두 번째 글' },
+  { notionId: ID(2), title: 'Redis: 센티넬 "구성"', date: '2024-02-01', dateFallback: false, markdown: '```yaml\ncleanUrl: /x\nfloatFirstTOC: right\n```\n\n두 번째 글\n\n<details>\n<summary>토글</summary>\n- 항목\n\n</details>' },
   {
     notionId: ID(3), title: '😀', date: '2024-03-01T10:00:00.000+09:00', dateFallback: true,
     markdown: '', unsupported: [{ type: 'embed', blockId: 'blk-1' }],
@@ -78,6 +78,7 @@ test('migrate: 파일·이미지·매핑·리포트를 생성한다', async () =
 
   const second = await fs.readFile(path.join(t.postsDir, 'Redis-센티넬-구성-2.md'), 'utf8');
   assert.ok(!second.includes('cleanUrl'));
+  assert.ok(second.includes('</summary>\n\n- 항목'));
   assert.match(second, /description: "두 번째 글"/);
 
   const third = await fs.readFile(path.join(t.postsDir, 'post-2024-03-01.md'), 'utf8');

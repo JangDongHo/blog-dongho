@@ -15,6 +15,7 @@ import {
   replaceFileUrls,
   fileExtensionFor,
   stripSiteConfigBlock,
+  fixDetailsSpacing,
 } from './content.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -116,7 +117,7 @@ export async function migrate({
       description: extractDescription(raw, entry.title),
       date,
     });
-    await fs.writeFile(path.join(postsDir, `${entry.slug}.md`), `${frontmatter}\n${fixBookmarkLinks(body).trim()}\n`);
+    await fs.writeFile(path.join(postsDir, `${entry.slug}.md`), `${frontmatter}\n${fixDetailsSpacing(fixBookmarkLinks(body)).trim()}\n`);
   }
 
   const map = entries.map(({ notionId, title, slug, encodedSlug, date }) => ({

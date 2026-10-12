@@ -16,6 +16,7 @@ import {
   replaceFileUrls,
   fileExtensionFor,
   stripSiteConfigBlock,
+  fixDetailsSpacing,
 } from './content.mjs';
 
 test('toDateOnly: 시간·타임존을 제거', () => {
@@ -148,4 +149,17 @@ test('stripSiteConfigBlock: 본문 맨 앞의 cleanUrl yaml 블록만 제거', (
 test('stripSiteConfigBlock: cleanUrl이 없는 일반 yaml 코드 블록은 유지', () => {
   const md = '```yaml\nname: app\nimage: node\n```\n\n본문';
   assert.equal(stripSiteConfigBlock(md), md);
+});
+
+test('calloutToMarkdown: 텍스트와 이모지가 모두 없는 콜아웃은 빈 문자열', () => {
+  const callout = { icon: { type: 'external', external: { url: 'https://x/i.png' } }, rich_text: [] };
+  assert.equal(calloutToMarkdown(callout), '');
+});
+
+test('fixDetailsSpacing: </summary> 뒤에 빈 줄이 없으면 추가하고, 있으면 유지', () => {
+  const md = '<details>\n<summary>a</summary>\n- x\n\n</details>\n\n<details>\n<summary>b</summary>\n\n```sh\nls\n```\n</details>';
+  assert.equal(
+    fixDetailsSpacing(md),
+    '<details>\n<summary>a</summary>\n\n- x\n\n</details>\n\n<details>\n<summary>b</summary>\n\n```sh\nls\n```\n</details>',
+  );
 });

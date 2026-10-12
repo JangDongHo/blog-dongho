@@ -87,8 +87,10 @@ export function richTextToMarkdown(richText) {
 
 export function calloutToMarkdown(callout) {
   const icon = callout.icon?.type === 'emoji' ? `${callout.icon.emoji} ` : '';
-  const lines = (icon + richTextToMarkdown(callout.rich_text)).split('\n');
-  return ['> [!note]', ...lines.map((l) => `> ${l}`)].join('\n');
+  const body = icon + richTextToMarkdown(callout.rich_text);
+  // 본문도 이모지도 없는 콜아웃(자식 블록만 담은 경우)은 빈 박스가 되므로 출력하지 않는다.
+  if (!body.trim()) return '';
+  return ['> [!note]', ...body.split('\n').map((l) => `> ${l}`)].join('\n');
 }
 
 // 출력이 비어 있어도 정상인 블록 타입
@@ -157,4 +159,9 @@ export function stripSiteConfigBlock(markdown) {
     lines.every((l) => /^[A-Za-z][\w-]*:\s*\S.*$/.test(l)) &&
     lines.some((l) => l.startsWith('cleanUrl:'));
   return isConfig ? markdown.slice(m[0].length) : markdown;
+}
+
+// HTML 블록(<details>)은 빈 줄 전까지 마크다운으로 해석되지 않으므로 </summary> 뒤에 빈 줄을 넣는다.
+export function fixDetailsSpacing(markdown) {
+  return markdown.replace(/<\/summary>\n(?!\n)/g, '</summary>\n\n');
 }
