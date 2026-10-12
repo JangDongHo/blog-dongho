@@ -46,7 +46,7 @@ async function setup() {
 const POSTS = [
   {
     notionId: ID(1), title: 'Redis: 센티넬 "구성"', date: '2024-01-05', dateFallback: false,
-    markdown: '# 개요\n\n본문 첫 문단\n\n![a](https://img.test/a.png?sig=1)\n![b](https://img.test/bad.png)',
+    markdown: '# 개요\n\n본문 첫 문단\n\n![a](https://img.test/a.png?sig=1)\n![b](https://img.test/bad.png)\n\n[녹화.mov](https://prod-files-secure.s3.us-west-2.amazonaws.com/x/rec.mov?X-Amz=1)\n\n[bookmark](https://example.com/p)',
   },
   { notionId: ID(2), title: 'Redis: 센티넬 "구성"', date: '2024-02-01', dateFallback: false, markdown: '두 번째 글' },
   {
@@ -70,6 +70,9 @@ test('migrate: 파일·이미지·매핑·리포트를 생성한다', async () =
   const enc = encodeURIComponent('Redis-센티넬-구성');
   assert.ok(first.includes(`![a](/posts/attachments/${enc}/img-01.png)`));
   assert.ok(first.includes('![b](https://img.test/bad.png)'));
+  assert.ok(first.includes(`[녹화.mov](/posts/attachments/${enc}/file-01.mov)`));
+  assert.ok(first.includes('[https://example.com/p](https://example.com/p)'));
+  await fs.access(path.join(t.postsDir, 'attachments', 'Redis-센티넬-구성', 'file-01.mov'));
   const img = await fs.readFile(path.join(t.postsDir, 'attachments', 'Redis-센티넬-구성', 'img-01.png'));
   assert.equal(img.length, 4);
 

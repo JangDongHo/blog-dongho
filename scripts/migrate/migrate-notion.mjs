@@ -10,6 +10,10 @@ import {
   imageKey,
   extensionFor,
   toDateOnly,
+  fixBookmarkLinks,
+  findNotionFileUrls,
+  replaceFileUrls,
+  fileExtensionFor,
 } from './content.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -29,33 +33,43 @@ async function removePrevious(postsDir, previousMap) {
   }
 }
 
-async function localizeImages({ markdown, slug, title, postsDir, fetchImpl, report }) {
-  const urlMap = new Map();
-  const byKey = new Map();
-  let n = 0;
-  for (const url of findImageUrls(markdown)) {
+async function localizeAssets({ markdown, slug, title, postsDir, fetchImpl, report }) {
+  const dir = path.join(postsDir, 'attachments', slug);
+  const publicBase = `/posts/attachments/${encodeURIComponent(slug)}`;
+  const saved = new Map(); // 서명 쿼리를 뗀 키 -> 공개 URL (같은 파일 중복 다운로드 방지)
+  const counters = { img: 0, file: 0 };
+
+  async function save(url, prefix, extOf) {
     const key = imageKey(url);
-    if (byKey.has(key)) {
-      urlMap.set(url, byKey.get(key));
-      continue;
-    }
+    if (saved.has(key)) return saved.get(key);
     try {
       const res = await fetchImpl(url);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const ext = extensionFor(res.headers.get('content-type'), url);
-      if (!ext) throw new Error('알 수 없는 이미지 형식');
-      const name = `img-${String(++n).padStart(2, '0')}.${ext}`;
-      const dir = path.join(postsDir, 'attachments', slug);
+      const ext = extOf(res.headers.get('content-type'), url);
+      if (!ext) throw new Error('알 수 없는 파일 형식');
+      const name = `${prefix}-${String(++counters[prefix]).padStart(2, '0')}.${ext}`;
       await fs.mkdir(dir, { recursive: true });
       await fs.writeFile(path.join(dir, name), Buffer.from(await res.arrayBuffer()));
-      const publicUrl = `/posts/attachments/${encodeURIComponent(slug)}/${name}`;
-      byKey.set(key, publicUrl);
-      urlMap.set(url, publicUrl);
+      const publicUrl = `${publicBase}/${name}`;
+      saved.set(key, publicUrl);
+      return publicUrl;
     } catch (err) {
       report.imageFailures.push({ title, url: key, reason: err.message });
+      return null;
     }
   }
-  return replaceImageUrls(markdown, urlMap);
+
+  const imageMap = new Map();
+  for (const url of findImageUrls(markdown)) {
+    const local = await save(url, 'img', extensionFor);
+    if (local) imageMap.set(url, local);
+  }
+  const fileMap = new Map();
+  for (const url of findNotionFileUrls(markdown)) {
+    const local = await save(url, 'file', fileExtensionFor);
+    if (local) fileMap.set(url, local);
+  }
+  return replaceFileUrls(replaceImageUrls(markdown, imageMap), fileMap);
 }
 
 export function renderReport(report, total) {
@@ -92,7 +106,7 @@ export async function migrate({
     if (entry.dateFallback) report.dateFallbacks.push({ title: entry.title, date });
     if (!raw.trim()) report.emptyBodies.push({ title: entry.title });
 
-    const body = await localizeImages({
+    const body = await localizeAssets({
       markdown: raw, slug: entry.slug, title: entry.title, postsDir, fetchImpl, report,
     });
     const frontmatter = buildFrontmatter({
@@ -100,7 +114,7 @@ export async function migrate({
       description: extractDescription(raw, entry.title),
       date,
     });
-    await fs.writeFile(path.join(postsDir, `${entry.slug}.md`), `${frontmatter}\n${body.trim()}\n`);
+    await fs.writeFile(path.join(postsDir, `${entry.slug}.md`), `${frontmatter}\n${fixBookmarkLinks(body).trim()}\n`);
   }
 
   const map = entries.map(({ notionId, title, slug, encodedSlug, date }) => ({

@@ -11,6 +11,10 @@ import {
   richTextToMarkdown,
   calloutToMarkdown,
   findUnsupported,
+  fixBookmarkLinks,
+  findNotionFileUrls,
+  replaceFileUrls,
+  fileExtensionFor,
 } from './content.mjs';
 
 test('toDateOnly: 시간·타임존을 제거', () => {
@@ -95,4 +99,42 @@ test('findUnsupported: 출력이 빈 블록과 주의 대상 타입을 보고', 
     { type: 'child_page', blockId: '3' },
     { type: 'synced_block', blockId: '5' },
   ]);
+});
+
+test('findUnsupported: table_row와 table_of_contents는 빈 출력이 정상', () => {
+  const blocks = [
+    { type: 'table', blockId: '1', parent: '| a |', children: [{ type: 'table_row', blockId: '2', parent: '', children: [] }] },
+    { type: 'table_of_contents', blockId: '3', parent: '', children: [] },
+  ];
+  assert.deepEqual(findUnsupported(blocks), []);
+});
+
+test('fixBookmarkLinks: 캡션 없는 bookmark·embed·link_preview는 URL을 링크 텍스트로', () => {
+  const md = '[bookmark](https://a.com/x)\n[embed](https://b.com)\n[link_preview](https://c.com)\n[캡션](https://d.com)';
+  assert.equal(
+    fixBookmarkLinks(md),
+    '[https://a.com/x](https://a.com/x)\n[https://b.com](https://b.com)\n[https://c.com](https://c.com)\n[캡션](https://d.com)',
+  );
+});
+
+const S3 = 'https://prod-files-secure.s3.us-west-2.amazonaws.com';
+
+test('findNotionFileUrls: 이미지가 아닌 Notion S3 링크만', () => {
+  const md = `![img](${S3}/a/b.png?x=1)\n[녹화.mov](${S3}/a/%EB%85%B9.mov?x=1)\n[외부](https://example.com/a.mov)`;
+  assert.deepEqual(findNotionFileUrls(md), [`${S3}/a/%EB%85%B9.mov?x=1`]);
+});
+
+test('replaceFileUrls: 매핑된 링크만 치환하고 텍스트는 유지', () => {
+  const url = `${S3}/a/rec.mov?x=1`;
+  const md = `[녹화](${url}) ![img](${S3}/a/b.png?x=1)`;
+  assert.equal(
+    replaceFileUrls(md, new Map([[url, '/posts/attachments/s/file-01.mov']])),
+    `[녹화](/posts/attachments/s/file-01.mov) ![img](${S3}/a/b.png?x=1)`,
+  );
+});
+
+test('fileExtensionFor: URL 경로 확장자 우선, 없으면 이미지 content-type, 모르면 null', () => {
+  assert.equal(fileExtensionFor(null, `${S3}/a/%EB%85%B9.MOV?x=1`), 'mov');
+  assert.equal(fileExtensionFor('image/png', `${S3}/a/noext`), 'png');
+  assert.equal(fileExtensionFor(null, `${S3}/a/noext`), null);
 });

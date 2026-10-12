@@ -95,6 +95,8 @@ export function calloutToMarkdown(callout) {
 const EMPTY_OK = new Set([
   'paragraph', 'divider', 'column_list', 'column', 'toggle',
   'bulleted_list_item', 'numbered_list_item', 'to_do', 'quote',
+  // 표는 table 블록이 한 번에 렌더링하고, 목차는 테마가 자체 TOC를 제공한다.
+  'table_row', 'table_of_contents',
 ]);
 // 출력이 있어도 수동 확인이 필요한 블록 타입
 const ALWAYS_REPORT = new Set(['child_page', 'child_database', 'synced_block', 'link_to_page']);
@@ -112,4 +114,35 @@ export function findUnsupported(mdBlocks) {
   };
   walk(mdBlocks);
   return found;
+}
+
+// notion-to-md는 캡션 없는 북마크류를 `[bookmark](url)`로 내보낸다. URL을 링크 텍스트로 쓴다.
+export function fixBookmarkLinks(markdown) {
+  return markdown.replace(
+    /\[(?:bookmark|embed|link_preview)\]\((https?:\/\/[^)\s]+)\)/g,
+    (_, url) => `[${url}](${url})`,
+  );
+}
+
+// 이미지가 아닌 첨부(파일·영상·PDF 등)는 `[이름](Notion S3 URL)`로 나온다. 만료되므로 내려받는다.
+const NOTION_FILE_HOST = String.raw`(?:prod-files-secure\.s3[^)\s/]*|secure\.notion-static\.com|s3[.-][^)\s/]*amazonaws\.com)`;
+const FILE_RE = new RegExp(
+  String.raw`(?<!!)\[([^\]]*)\]\((https?:\/\/${NOTION_FILE_HOST}[^)\s]*)\)`,
+  'g',
+);
+
+export function findNotionFileUrls(markdown) {
+  return [...new Set([...markdown.matchAll(FILE_RE)].map((m) => m[2]))];
+}
+
+export function replaceFileUrls(markdown, urlMap) {
+  return markdown.replace(FILE_RE, (all, text, url) =>
+    urlMap.has(url) ? `[${text}](${urlMap.get(url)})` : all,
+  );
+}
+
+export function fileExtensionFor(contentType, url) {
+  const m = new URL(url).pathname.match(/\.([A-Za-z0-9]{1,5})$/);
+  if (m) return m[1].toLowerCase();
+  return extensionFor(contentType, url);
 }
