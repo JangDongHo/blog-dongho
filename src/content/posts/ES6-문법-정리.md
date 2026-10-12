@@ -905,7 +905,7 @@ num.push() // 56;
 >
 > **이전 글**
 >
-> [노드의 핵심 개념과 이벤트 루프 이해하기](https://app.notion.com/p/1595ca9b265e801f9800cd5bbb9c3dd6)
+> [노드의 핵심 개념과 이벤트 루프 이해하기](/posts/%EB%85%B8%EB%93%9C%EC%9D%98-%ED%95%B5%EC%8B%AC-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0)
 
 
 > [!note]

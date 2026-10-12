@@ -10,7 +10,7 @@ date: 2025-01-09
 ---
 
 
-[SQL로 데이터베이스 정의하기 [개념]](https://app.notion.com/p/16b5ca9b265e80faae70f3fc89b2b93a) 
+[SQL로 데이터베이스 정의하기 [개념]](/posts/sql%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%A0%95%EC%9D%98%ED%95%98%EA%B8%B0-%EA%B0%9C%EB%85%90) 
 
 - IT 회사 RDB 만들기
     - 부서, 사원, 프로젝트 관련 정보들을 저장할 수 있는 RDB를 지난 포스팅에서 만들어보았다.
@@ -256,7 +256,7 @@ FROM table(s)
 >
 > **이전 글**
 >
-> [SQL로 데이터베이스에 데이터 추가, 수정, 삭제하기](https://app.notion.com/p/1705ca9b265e806a808acb78d6263839)
+> [SQL로 데이터베이스에 데이터 추가, 수정, 삭제하기](/posts/sql%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%97%90-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B6%94%EA%B0%80-%EC%88%98%EC%A0%95-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0)
 
 
 > [!note]

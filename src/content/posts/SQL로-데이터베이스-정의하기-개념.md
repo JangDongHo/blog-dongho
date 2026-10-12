@@ -490,11 +490,11 @@ DROP TABLE table_name;
 >
 > **이전 글**
 >
-> [관계형 데이터베이스 [개념]](https://app.notion.com/p/15a5ca9b265e80be9d5afa5c4deb3e17)
+> [관계형 데이터베이스 [개념]](/posts/%EA%B4%80%EA%B3%84%ED%98%95-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%85%90)
 
 
 > [!note]
 >
 > **다음 글**
 >
-> [SQL로 데이터베이스에 데이터 추가, 수정, 삭제하기](https://app.notion.com/p/1705ca9b265e806a808acb78d6263839)
+> [SQL로 데이터베이스에 데이터 추가, 수정, 삭제하기](/posts/sql%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%97%90-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B6%94%EA%B0%80-%EC%88%98%EC%A0%95-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0)
