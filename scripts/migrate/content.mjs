@@ -1,0 +1,115 @@
+export function toDateOnly(iso) {
+  return String(iso).slice(0, 10);
+}
+
+export function buildFrontmatter({ title, description, date }) {
+  return [
+    '---',
+    `title: ${JSON.stringify(title)}`,
+    `description: ${JSON.stringify(description)}`,
+    `date: ${date}`,
+    '---',
+    '',
+  ].join('\n');
+}
+
+function toPlain(block) {
+  return block
+    .replace(/<[^>]+>/g, '')
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+    .replace(/^\s{0,3}(>|[-*+]|\d+\.)\s+/gm, '')
+    .replace(/[*_`~$]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+export function extractDescription(markdown, fallback = '', max = 160) {
+  const text = markdown
+    .replace(/```[\s\S]*?```/g, '\n\n')
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, '')
+    .split(/\n{2,}/)
+    .filter((block) => !/^\s*#{1,6}\s/.test(block))
+    .map(toPlain)
+    .find((p) => p.length > 0);
+  if (!text) return fallback;
+  return Array.from(text).slice(0, max).join('');
+}
+
+const IMG_RE = /!\[([^\]]*)\]\((https?:\/\/[^)\s]+)\)/g;
+
+export function findImageUrls(markdown) {
+  return [...new Set([...markdown.matchAll(IMG_RE)].map((m) => m[2]))];
+}
+
+export function replaceImageUrls(markdown, urlMap) {
+  return markdown.replace(IMG_RE, (all, alt, url) =>
+    urlMap.has(url) ? `![${alt}](${urlMap.get(url)})` : all,
+  );
+}
+
+export function imageKey(url) {
+  const u = new URL(url);
+  return u.origin + u.pathname;
+}
+
+const TYPE_TO_EXT = {
+  'image/png': 'png',
+  'image/jpeg': 'jpg',
+  'image/gif': 'gif',
+  'image/webp': 'webp',
+  'image/avif': 'avif',
+  'image/svg+xml': 'svg',
+};
+
+export function extensionFor(contentType, url) {
+  const type = (contentType ?? '').split(';')[0].trim().toLowerCase();
+  if (TYPE_TO_EXT[type]) return TYPE_TO_EXT[type];
+  const m = new URL(url).pathname.match(/\.(png|jpe?g|gif|webp|avif|svg)$/i);
+  if (!m) return null;
+  const ext = m[1].toLowerCase();
+  return ext === 'jpeg' ? 'jpg' : ext;
+}
+
+export function richTextToMarkdown(richText) {
+  return richText
+    .map((t) => {
+      let s = t.plain_text;
+      const a = t.annotations ?? {};
+      if (a.code) s = '`' + s + '`';
+      if (a.bold) s = `**${s}**`;
+      if (a.italic) s = `*${s}*`;
+      if (a.strikethrough) s = `~~${s}~~`;
+      if (t.href) s = `[${s}](${t.href})`;
+      return s;
+    })
+    .join('');
+}
+
+export function calloutToMarkdown(callout) {
+  const icon = callout.icon?.type === 'emoji' ? `${callout.icon.emoji} ` : '';
+  const lines = (icon + richTextToMarkdown(callout.rich_text)).split('\n');
+  return ['> [!note]', ...lines.map((l) => `> ${l}`)].join('\n');
+}
+
+// 출력이 비어 있어도 정상인 블록 타입
+const EMPTY_OK = new Set([
+  'paragraph', 'divider', 'column_list', 'column', 'toggle',
+  'bulleted_list_item', 'numbered_list_item', 'to_do', 'quote',
+]);
+// 출력이 있어도 수동 확인이 필요한 블록 타입
+const ALWAYS_REPORT = new Set(['child_page', 'child_database', 'synced_block', 'link_to_page']);
+
+export function findUnsupported(mdBlocks) {
+  const found = [];
+  const walk = (blocks) => {
+    for (const b of blocks) {
+      const empty = !b.parent?.trim() && !(b.children?.length);
+      if (ALWAYS_REPORT.has(b.type) || (empty && !EMPTY_OK.has(b.type))) {
+        found.push({ type: b.type, blockId: b.blockId });
+      }
+      if (b.children?.length) walk(b.children);
+    }
+  };
+  walk(mdBlocks);
+  return found;
+}
