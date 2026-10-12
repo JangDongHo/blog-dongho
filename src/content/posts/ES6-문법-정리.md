@@ -141,6 +141,21 @@ showAge();
 그렇다면 `const`와 `let`의 차이는 무엇일까?
 
 
+> [!note]
+> - **const**
+>     - 한 번 값을 할당하면 다른 값을 할당할 수 없다.
+>         - 만약 다른 값을 할당하려고 하면 에러가 발생한다.
+>     - 초기화할 때 값을 할당하지 않으면 에러가 발생한다.
+>     - 상수의 개념
+
+
+> [!note]
+> - **let**
+>     - 다른 값을 할당할 수 있다.
+>     - 초기화할 때 값을 할당하지 않아도 된다.
+>     - 변수의 개념
+
+
 ```javascript
 const a = 0;
 a = 1; // Uncaught TypeError: Assignment to constant variable
@@ -161,6 +176,8 @@ const c; // Uncaught SyntaxError: Missing initializer in const declaration
 > [!note]
 > **Q. const와 let과 var을 비교 설명하시오.
 > **
+>
+> const, let, 그리고 var은 자바스크립트에서 변수를 선언하는 키워드들이지만, 각각 다른 특성을 가지고 있습니다. const와 let은 ES6에서 도입된 블록 스코프 변수로, 호이스팅 문제를 해결하고 더 예측 가능한 코드를 작성할 수 있게 해줍니다. 반면 var은 함수 스코프를 가지며, 호이스팅으로 인해 예기치 않은 동작을 일으킬 수 있습니다. const는 재할당이 불가능한 상수를 선언할 때 사용하고, let은 재할당이 필요한 변수에 사용하며, var은 레거시 코드에서 주로 볼 수 있습니다.
 
 
 ## 2.1.2. 템플릿 문자열
@@ -383,6 +400,101 @@ newObject 안에서 `[es + 6]`가 속성명으로 바로 사용되고 있다.
 > [!note]
 > **Q. 객체 리터럴과 함수와 클래스의 차이는?
 > **
+>
+> <details>
+> <summary>**객체 리터럴:** 단순한 데이터 구조</summary>
+
+> - **사용 상황**: 데이터만 구조화해서 사용하거나, 단순한 동작을 포함할 때.
+> - **장점**: 선언과 동시에 객체를 생성하며, 간단하고 직관적임.
+> - **단점**: 복잡한 동작이나 상속에는 적합하지 않음.
+> - **예시**: 환경설정 정보 관리
+>
+>     ```javascript
+>     const config = {
+>       host: "localhost",
+>       port: 3000,
+>       database: "myapp",
+>       getConnectionString() {
+>         return `mongodb://${this.host}:${this.port}/${this.database}`;
+>       }
+>     };
+>
+>     // 사용
+>     console.log(config.getConnectionString()); // "mongodb://localhost:3000/myapp"
+>     ```
+>
+>
+> </details>
+>
+> <details>
+> <summary>**함수:** 특정 로직이나 작업을 캡슐화할 때 사용</summary>
+
+> - **사용 상황**: 단일 작업(예: 검증, 처리, 계산 등)을 반복적으로 수행할 때.
+> - **장점**: 모듈화가 용이하며, 재사용성이 높음.
+> - **단점**: 상태를 저장하거나 객체 지향적인 구조를 지원하지 않음.
+> - **예시**: 요청 데이터 검증 로직
+>
+>     ```javascript
+>     function validateUserInput(data) {
+>       if (!data.username || data.username.length < 3) {
+>         return { isValid: false, error: "Username must be at least 3 characters long." };
+>       }
+>       if (!data.email || !data.email.includes("@")) {
+>         return { isValid: false, error: "Invalid email format." };
+>       }
+>       return { isValid: true };
+>     }
+>
+>     // 사용
+>     const userInput = { username: "jo", email: "test@example.com" };
+>     console.log(validateUserInput(userInput)); 
+>     // { isValid: false, error: "Username must be at least 3 characters long." }
+>     ```
+>
+>
+> </details>
+>
+> <details>
+> <summary>**클래스:** 상태와 동작을 함께 관리할 때 사용</summary>
+
+> - **사용 상황**: 상태와 동작을 하나로 묶어 관리하거나, 여러 인스턴스를 생성해야 할 때.
+> - **장점**: 상태를 관리하기 쉽고, 상속 및 확장이 가능.
+> - **단점**: 상대적으로 더 많은 코드와 복잡성이 요구됨.
+> - **예시**: 사용자 관리 시스템
+>
+>     ```javascript
+>     class User {
+>       constructor(username, email) {
+>         this.username = username;
+>         this.email = email;
+>       }
+>
+>       getProfile() {
+>         return `${this.username} (${this.email})`;
+>       }
+>
+>       updateEmail(newEmail) {
+>         this.email = newEmail;
+>         return this.email;
+>       }
+>     }
+>
+>     // 사용
+>     const user1 = new User("johndoe", "john@example.com");
+>     console.log(user1.getProfile()); // "johndoe (john@example.com)"
+>     user1.updateEmail("john.doe@example.com");
+>     console.log(user1.getProfile()); // "johndoe (john.doe@example.com)"
+>     ```
+>
+>
+> </details>
+>
+>
+> | **개념**     | **예시**            | **사용 목적**                        |
+> | ---------- | ----------------- | -------------------------------- |
+> | **객체 리터럴** | 서버 설정, 고정값 관리     | 간단한 데이터 구조를 정의하고 관리할 때.          |
+> | **함수**     | 데이터 검증, 유틸리티 함수   | 특정 작업이나 로직을 반복적으로 수행할 때.         |
+> | **클래스**    | 사용자 관리, 데이터 모델 정의 | 상태와 동작을 함께 관리하거나 여러 인스턴스가 필요할 때. |
 
 
 ## 2.1.4 화살표 함수
@@ -787,6 +899,8 @@ num.push() // 56;
 
 > [!note]
 > **이전 글**
+>
+> [노드의 핵심 개념과 이벤트 루프 이해하기](https://app.notion.com/p/1595ca9b265e801f9800cd5bbb9c3dd6)
 
 
 > [!note]

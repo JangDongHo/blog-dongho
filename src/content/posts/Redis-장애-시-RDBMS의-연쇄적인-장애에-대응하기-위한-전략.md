@@ -219,6 +219,14 @@ A와 B 사이의 네트워크가 끊겼다. 이때 B 인스턴스 Sentinel은 A�
 
 > [!note]
 > 💡 **Redis Client란?**
+>
+> Redis Client는 애플리케이션이 Redis Server와 통신할 수 있도록 해주는 라이브러리다.
+>
+>
+> 예를 들어 Node.js 진영에서는 `ioredis`, `node-redis` 등이 Redis Client 역할을 한다.
+>
+>
+> 애플리케이션에서 `redis.get()`, `redis.set()` 등을 호출하면 Redis Client가 이를 Redis 명령으로 반환하여 Redis Server와 통신한다.
 
 
 이때 애플리케이션의 Redis Client에는 각 인스턴스에 있는 Sentinel의 주소를 등록해둔다.
@@ -270,6 +278,17 @@ Redis Client는 등록된 Sentinel 중 하나에 접속해서 “mymaster라는 
 
 > [!note]
 > 💡 **Redis Pub/Sub 이란?**
+>
+> Redis Pub/Sub(Publish/Subscribe)은 메시지를 특정 채널에 발행하고, 해당 채널을 구독한 클라이언트가 메시지를 전달받는 방식이다.
+>
+>
+> 메시지를 보내는 쪽을 Publisher, 메시지를 받는 쪽을 Subscriber라고 한다.
+>
+>
+> Publisher는 Subscriber가 누구인지 알 필요가 없다. 단순히 특정 채널에 메시지를 발행하면 해당 채널을 구독하고 있는 모든 Subscriber에게 메시지가 전달된다.
+>
+>
+> 단, Pub/Sub은 메시지를 저장하는 시스템이 아니다. Subscriber가 메시지를 받을 당시 연결되어 있지 않다면 해당 메시지를 나중에 다시 받을 수 없다.
 
 
 ### Sentinel은 어떻게 서로를 발견할까?

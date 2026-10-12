@@ -260,6 +260,10 @@ jobs:
 
 > [!note]
 > **핵심 요약**
+>
+> - Prisma는 자동 롤백 명령어가 없다.
+> - 실패 시 **수동으로 SQL 복구** 후 `npx prisma migrate resolve --rolled-back [명칭]`을 실행해 상태를 맞춘다.
+> - 가장 좋은 방법은 문제를 해결한 **새 마이그레이션을 배포(Roll-forward)** 하는 것이다.
 
 
 ## 참고 자료

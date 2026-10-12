@@ -188,6 +188,6 @@ test('removeExcludedFileLinks: 제외 확장자의 Notion 첨부 링크만 단�
   const md = `앞\n\n[녹화.mov](${S3}/a/rec.MOV?x=1)\n\n[문서.pdf](${S3}/a/doc.pdf?x=1)\n\n본문 중 [인라인.mov](${S3}/a/i.mov?x=1) 링크\n\n뒤`;
   assert.equal(
     removeExcludedFileLinks(md, ['mov']),
-    `앞\n\n\n\n[문서.pdf](${S3}/a/doc.pdf?x=1)\n\n본문 중 [인라인.mov](${S3}/a/i.mov?x=1) 링크\n\n뒤`,
+    `앞\n\n\n[문서.pdf](${S3}/a/doc.pdf?x=1)\n\n본문 중 [인라인.mov](${S3}/a/i.mov?x=1) 링크\n\n뒤`,
   );
 });

@@ -69,6 +69,56 @@ GRADE가 존재하는 개발자의 GRADE, ID, EMAIL을 조회하는 SQL 문을 �
 
     > [!note]
     > ✋ **비트 연산과 SUM(CODE)의 역할**
+    >
+    > `SUM(CODE)`를 사용하는 이유는 **한 범주 또는 특정 조건에 해당하는 모든 스킬의 비트 값을 하나의 숫자로 결합**하기 위해서 사용한다.
+    >
+    >
+    >
+    > 예를 들어, `SKILLCODES` 테이블이 다음과 같다고 가정해 보자.
+    >
+    >
+    > | **NAME**   | **CATEGORY** | **CODE (10진수)** | **CODE (2진수)** |
+    > | ---------- | ------------ | --------------- | -------------- |
+    > | JavaScript | Front End    | 16              | 00010000       |
+    > | React      | Front End    | 2048            | 100000000000   |
+    > | Vue        | Front End    | 8192            | 10000000000000 |
+    > | Python     | Back End     | 256             | 100000000      |
+    > | C#         | Back End     | 1024            | 10000000000    |
+    >
+    >
+    >
+    > 1️⃣ `SUM(CODE)` 없이 개별 조회할 경우
+    >
+    > - 만약 Front End 스킬을 확인하려면, JavaScript, React, Vue 등의 개별 CODE를 모두 AND 연산으로 확인해야 한다.
+    > - 즉, 개발자의 SKILL_CODE가 각 스킬에 대해 다음을 만족하는지 확인해야 한다.
+    >
+    >     ```sql
+    >     d.SKILL_CODE & 16 > 0 OR
+    >     d.SKILL_CODE & 2048 > 0 OR
+    >     d.SKILL_CODE & 8192 > 0
+    >     ```
+    >
+    >
+    > 2️⃣ `SUM(CODE)`를 사용하여 비트마스크 생성
+    >
+    > - `SUM(CODE)`를 사용하면 비트 연산을 한 번만 수행하면 되기 때문에 실행 속도가 빨라지고 가독성이 좋아진다는 장점이 있다.
+    > - 또한, 새로운 Front End 기술이 추가되더라도 쿼리를 수정할 필요 없이 `SKILLCODES` 테이블만 업데이트하면 된다.
+    >
+    >     ```sql
+    >     SELECT SUM(CODE) FROM SKILLCODES WHERE CATEGORY = 'Front End';
+    >     ```
+    >
+    >
+    >     ```sql
+    >     16 (JavaScript) + 2048 (React) + 8192 (Vue) = 10256
+    >     ```
+    >
+    >
+    >     ```sql
+    >     d.SKILL_CODE & 10256 > 0
+    >     ```
+    >
+    > - 이렇게 하면 Front End 스킬 중 하나라도 보유한 개발자를 빠르게 찾을 수 있다.
 
 - **CASE 문으로 GRADE 분류**
     - `CASE` 문을 활용하여 `GRADE`를 부여
