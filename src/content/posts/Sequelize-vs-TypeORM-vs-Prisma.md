@@ -2,6 +2,8 @@
 title: "Sequelize vs TypeORM vs Prisma"
 description: "객체 지향 프로그래밍 (OOP): 클래스, 객체, 상속, 연관 관계 등 객체 지향의 기본 개념을 이해해야 한다. 우리가 코드로 짜는 ‘객체’가 어떻게 데이터베이스에 저장될지를 다루기 때문이다. 관계형 데이터베이스 (RDBMS) & SQL: 테이블, PK(기본키), FK(외래키), Joi"
 date: 2026-01-18
+tags:
+  - DB
 ---
 
 ## 사전 지식

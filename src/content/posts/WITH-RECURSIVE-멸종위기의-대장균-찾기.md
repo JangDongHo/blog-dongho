@@ -2,6 +2,8 @@
 title: "[WITH RECURSIVE] 멸종위기의 대장균 찾기"
 description: "각 세대별 자식이 없는 개체의 수(COUNT)와 세대(GENERATION)를 출력하는 문제"
 date: 2025-03-07
+tags:
+  - DB
 ---
 
 ## 문제 설명

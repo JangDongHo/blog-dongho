@@ -2,6 +2,8 @@
 title: "Supabase Max client connections reached 오류 해결"
 description: "오늘은 일주일 간 나를 골머리 아프게 했던 Max client connections reached 에러 해결 방법에 대해 기록하고자 한다. 이 문제를 해결하면서 데이터베이스의 연결 관리와 최적화에 대해 많은 것을 배울 수 있었다."
 date: 2024-05-24
+tags:
+  - DB
 ---
 
 오늘은 일주일 간 나를 골머리 아프게 했던 Max client connections reached 에러 해결 방법에 대해 기록하고자 한다. 이 문제를 해결하면서 데이터베이스의 연결 관리와 최적화에 대해 많은 것을 배울 수 있었다.

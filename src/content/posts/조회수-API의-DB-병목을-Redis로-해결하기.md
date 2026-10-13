@@ -2,6 +2,8 @@
 title: "조회수 API의 DB 병목을 Redis로 해결하기"
 description: "boostus는 부스트캠프 수료생들의 블로그 글을 한 곳에서 모아볼 수 있는 아카이빙 서비스다."
 date: 2026-04-13
+tags:
+  - DB
 ---
 
 ## 배경

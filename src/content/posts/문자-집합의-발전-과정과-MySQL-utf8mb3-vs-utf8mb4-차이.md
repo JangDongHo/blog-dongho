@@ -2,6 +2,8 @@
 title: "문자 집합의 발전 과정과 MySQL utf8mb3 vs utf8mb4 차이"
 description: "문자 집합(character set): 컴퓨터가 이해할 수 있는 문자들의 집합 문자 인코딩(character encoding): 문자 집합에 속한 문자를 컴퓨터가 이해하는 0과 1로 이루어진 문자 코드로 변환하는 과정 문자 디코딩(character decoding): 반대로 0과 1로 "
 date: 2025-10-21
+tags:
+  - DB
 ---
 
 ## 사전 지식 정리

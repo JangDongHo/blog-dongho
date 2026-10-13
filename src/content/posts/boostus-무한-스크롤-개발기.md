@@ -2,6 +2,8 @@
 title: "boostus 무한 스크롤 개발기"
 description: "부스트캠프 커뮤니티 서비스 boostus에는 ‘캠퍼들의 이야기’라는 공간이 있습니다."
 date: 2026-02-02
+tags:
+  - DB
 ---
 
 ![%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2026-02-03_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_9.29.05.png](/posts/attachments/boostus-%EB%AC%B4%ED%95%9C-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EA%B0%9C%EB%B0%9C%EA%B8%B0/img-01.png)

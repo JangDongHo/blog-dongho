@@ -2,6 +2,8 @@
 title: "Prisma로 처음 ORM을 써봤습니다"
 description: "안녕하세요, 장동호입니다!"
 date: 2025-05-19
+tags:
+  - DB
 ---
 
 안녕하세요, 장동호입니다!

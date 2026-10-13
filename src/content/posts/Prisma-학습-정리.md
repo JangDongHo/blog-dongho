@@ -2,6 +2,8 @@
 title: "Prisma 학습 정리"
 description: "Prisma는 최근 Node.js 생태계에서 가장 선호되는 ORM 중 하나이다. 기존 ORM들이 “코드로 테이블을 묘사”하려 했다면, Prisma는 스키마 파일 하나로 DB와 코드를 동시에 제어한다는 철학을 가지고 있다."
 date: 2026-01-18
+tags:
+  - DB
 ---
 
 - Prisma는 최근 Node.js 생태계에서 가장 선호되는 ORM 중 하나이다.

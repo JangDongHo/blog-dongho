@@ -2,6 +2,8 @@
 title: "[CASE WHEN THEN END] 프로그래머스 - 언어별 개발자 분류하기"
 description: "DEVELOPERS 테이블에서 GRADE별 개발자의 정보를 조회하려 합니다. GRADE는 다음과 같이 정해집니다."
 date: 2025-03-02
+tags:
+  - DB
 ---
 
 ## 문제 설명
