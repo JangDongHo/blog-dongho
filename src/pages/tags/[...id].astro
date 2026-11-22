@@ -36,7 +36,7 @@ const sortedPosts = posts.sort(
       <h1 class="animate font-semibold text-black dark:text-white">
         "{id}" 태그가 붙은 글
       </h1>
-      <ul class="animate flex flex-col gap-4">
+      <ul class="animate not-prose flex flex-col gap-2">
         {sortedPosts.map((post) => <ArrowCard entry={post} />)}
       </ul>
     </div>

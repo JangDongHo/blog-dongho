@@ -200,3 +200,11 @@ article table {
 .callout :where(p, li, strong, em, code, a) {
   color: inherit;
 }
+
+/* 클릭할 수 있는 요소에는 손가락 커서를 보여준다 (Tailwind v4는 버튼 기본 커서가 화살표) */
+button:not(:disabled),
+[role="button"]:not([aria-disabled="true"]),
+summary,
+a[href] {
+  cursor: pointer;
+}

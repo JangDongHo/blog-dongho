@@ -5,7 +5,6 @@ export const SITE: Site = {
   DESCRIPTION: "Slow and steady, with pleasure.",
   AUTHOR: "장동호",
   URL: "https://dongho.me",
-  NUM_POSTS_ON_HOMEPAGE: 5,
 };
 
 export const HOME: Metadata = {

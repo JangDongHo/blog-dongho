@@ -1,15 +1,14 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
-import { SITE, HOME, SOCIALS } from "@consts";
+import { SITE, HOME } from "@consts";
 import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
 import { getCollection } from "astro:content";
 
 const posts = (await getCollection("posts"))
   .filter((post) => !post.data.draft)
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0, SITE.NUM_POSTS_ON_HOMEPAGE);
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
 <Layout title={HOME.TITLE} description={HOME.DESCRIPTION}>
@@ -31,35 +30,12 @@ const posts = (await getCollection("posts"))
         </section>
 
         <section class="animate space-y-6">
-          <div class="flex flex-wrap items-center justify-between gap-y-2">
-            <h2 class="font-semibold text-black dark:text-white">최근 글</h2>
-            <Link href="/posts">모든 글 보기</Link>
-          </div>
-          <ul class="not-prose flex flex-col gap-4">
+          <h2 class="font-semibold text-black dark:text-white">글</h2>
+          <ul class="not-prose flex flex-col gap-2">
             {
               posts.map((post) => (
                 <li>
                   <ArrowCard entry={post} />
-                </li>
-              ))
-            }
-          </ul>
-        </section>
-
-        <section class="animate space-y-4">
-          <h2 class="font-semibold text-black dark:text-white">연락하기</h2>
-          <ul class="not-prose flex flex-wrap gap-2">
-            {
-              SOCIALS.map((SOCIAL, index) => (
-                <li class="flex gap-x-2 text-nowrap">
-                  <Link
-                    href={SOCIAL.HREF}
-                    external
-                    aria-label={`${SITE.AUTHOR}의 ${SOCIAL.NAME}`}
-                  >
-                    {SOCIAL.NAME}
-                  </Link>
-                  {index < SOCIALS.length - 1 && "/"}
                 </li>
               ))
             }

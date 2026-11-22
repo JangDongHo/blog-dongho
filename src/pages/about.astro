@@ -2,7 +2,8 @@
 import { getEntry, render } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
-import { ABOUT } from "@consts";
+import Link from "@components/Link.astro";
+import { ABOUT, SITE, SOCIALS } from "@consts";
 
 const page = await getEntry("pages", "about");
 if (!page) throw new Error("src/content/pages/about.md 파일이 필요합니다.");
@@ -17,5 +18,24 @@ const { Content } = await render(page);
     <article class="animate">
       <Content />
     </article>
+    <section class="animate mt-16 space-y-4">
+      <h2 class="font-semibold text-black dark:text-white">연락하기</h2>
+      <ul class="not-prose flex flex-wrap gap-2">
+        {
+          SOCIALS.map((SOCIAL, index) => (
+            <li class="flex gap-x-2 text-nowrap">
+              <Link
+                href={SOCIAL.HREF}
+                external
+                aria-label={`${SITE.AUTHOR}의 ${SOCIAL.NAME}`}
+              >
+                {SOCIAL.NAME}
+              </Link>
+              {index < SOCIALS.length - 1 && "/"}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
   </Container>
 </Layout>
