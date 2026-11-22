@@ -1,0 +1,21 @@
+---
+import { getEntry, render } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import { ABOUT } from "@consts";
+
+const page = await getEntry("pages", "about");
+if (!page) throw new Error("src/content/pages/about.md 파일이 필요합니다.");
+const { Content } = await render(page);
+---
+
+<Layout title={ABOUT.TITLE} description={page.data.description}>
+  <Container>
+    <h1 class="animate mb-10 text-3xl font-semibold text-black dark:text-white">
+      {page.data.title}
+    </h1>
+    <article class="animate">
+      <Content />
+    </article>
+  </Container>
+</Layout>
